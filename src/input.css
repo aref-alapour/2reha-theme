@@ -1,0 +1,886 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 100;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-Thin.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-Light.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-Regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-Bold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-ExtraBold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-Black.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Yekan Bakh"),
+      url("../fonts/yekan-bakh/YekanBakhFaNum-ExtraBlack.woff2") format("woff2");
+    font-display: swap;
+  }
+  * {
+    @apply font-YekanBakh;
+  }
+  img {
+    @apply w-full h-auto;
+  }
+  body {
+    line-height:  1.7;
+  }
+}
+
+@layer components {
+  .desktop-menu > ul {
+    @apply flex items-center gap-x-4 xl:gap-x-8 py-4 md:text-xs lg:text-sm xl:text-base;
+  }
+  .desktop-menu > ul li > a {
+    @apply text-tertiary-600 flex gap-x-1 items-center menu-btn;
+  }
+  .mobile-menu > ul {
+    @apply flex flex-col items-start gap-y-4 mt-6;
+  }
+  .mobile-menu > ul li a {
+    @apply text-tertiary-600 flex gap-x-1 items-center menu-btn;
+  }
+  .footer-menu > ul {
+    @apply space-y-1 text-tertiary-400;
+  }
+  .footer-menu > ul li > a {
+    @apply text-tertiary-400 hover:text-primary-600 transition-colors;
+  }
+  .animate-type {
+    animation: type 0.5s infinite alternate linear;
+  }
+  @keyframes type {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .animate-scale {
+    animation: scale 0.5s alternate infinite linear;
+  }
+  @keyframes scale {
+    0% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 0.9;
+      transform: scale(1);
+    }
+  }
+  .menu-btn {
+    @apply relative;
+    transition: 0.5s color linear;
+  }
+  .menu-btn::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #ff4500;
+    bottom: 0;
+    transform-origin: left;
+    transition: 0.4s transform linear;
+    transform: scale(0);
+  }
+  .menu-btn:hover {
+    color: #ff4500;
+  }
+  .menu-btn:hover::after {
+    transform: scale(1);
+    transform-origin: right;
+  }
+
+  .btn-primary {
+    @apply flex items-center h-10 px-4 gap-x-1 cursor-pointer bg-primary-500 hover:bg-primary-600 text-white rounded-md transition-all hover:shadow-sm text-xs lg:text-sm xl:text-base;
+  }
+  .btn-secondary {
+    @apply flex items-center h-10 px-4 gap-x-1 cursor-pointer bg-secondary-500 hover:bg-secondary-600 text-white rounded-md transition-all hover:shadow-sm text-xs lg:text-sm xl:text-base;
+  }
+  .tabs-title.active {
+    @apply text-primary-500 border-b border-b-primary-500;
+  }
+  .showcase_slider .price {
+    @apply text-base sm:text-lg md:text-xl text-green-light font-semibold flex items-center md:flex-col lg:flex-row gap-x-4 md:gap-y-2;
+  }
+  .showcase_slider .price del{
+    @apply md:order-2 lg:order-1 no-underline text-sm text-zinc-600 relative;
+  }
+  .showcase_slider .price del:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    transform: rotate(-5deg);
+  }
+  .showcase_slider .price ins{
+  @apply md:order-1 lg:order-2 no-underline
+}
+  .card-curse.swiper-slide-active {
+    @apply blur-0 h-auto;
+  }
+  .card-curse.swiper-slide-active .image {
+    min-width: unset;
+    min-height: unset;
+  }
+  .card-curse.swiper-slide-active .content {
+    transform: unset;
+  }
+  .card-curse.swiper-slide-prev {
+    transform: scale(0.5) !important;
+    margin-right: -15%;
+  }
+  .card-curse.swiper-slide-next {
+    transform: scale(0.5) !important;
+  }
+  .card-curse.swiper-slide-active {
+    transform: scale(1) !important;
+    width: 60% !important;
+  }
+  .header-section a {
+    @apply relative inline-block py-2 px-4 border border-zinc-200 text-tertiary-500 font-medium rounded-md overflow-hidden transition-colors transition-all duration-500 delay-75;
+  }
+
+  .header-section a:hover {
+    @apply text-primary-500 transition-all delay-[1ms] scale-110;
+  }
+  .swiper-wrapper .swiper-slide.course-card {
+    @apply w-72;
+  }
+  .swiper-wrapper .swiper-slide.course-card .course-card-body {
+    @apply w-72;
+  }
+  .course-card .course-card-body {
+    @apply bg-transparent  h-[300px] perspective-1000;
+  }
+  .course-card .course-card-body .course-card-filip {
+    @apply relative w-full h-full transition-transform duration-700 transform transform-style-3d;
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-front {
+    @apply border border-b-0 border-tertiary-100 rounded-t-lg shadow-sm absolute w-full h-full backface-hidden bg-white;
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-front .purchased {
+    @apply absolute top-2 flex justify-center items-center gap-x-2 bg-slate-100/90 px-4 py-2 text-xs font-semibold rounded-md shadow right-1/2 translate-x-1/2 w-fit text-nowrap z-10;
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-front .off {
+    @apply absolute bg-green-light/80 font-medium text-sm text-slate-50 p-2 left-0 rounded-br-lg z-10 rounded-tl-lg;
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-front .image {
+    @apply block h-36 rounded-t-lg overflow-hidden;
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-front .image > img {
+    @apply w-full h-full object-cover;
+  }
+  .header-section a span {
+    @apply absolute block bg-primary-500 shadow-[0_0_5px_#ff4500];
+  }
+
+  .course-card .course-card-body .course-card-filip .course-card-body-front .course-detail{
+  @apply flex justify-between items-center px-4 text-zinc-500 my-2;
+}
+  .course-card .course-card-body .course-card-filip .course-card-body-front .course-info{
+  @apply flex justify-between items-center px-4 mt-8;
+}
+  .course-card .course-card-body .course-card-filip .course-card-body-front .title {
+    @apply text-justify font-medium text-sm px-4 line-clamp-2 my-4 h-[2.7rem];
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-front .course-info .teacher {
+    @apply flex items-center gap-x-2 text-sm font-medium text-secondary-500 w-fit;
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-back {
+@apply border border-b-0 border-tertiary-100 rounded-t-lg shadow-sm absolute w-full h-full backface-hidden transform rotate-y-180 bg-white;
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-back .course-back-content{
+  @apply flex flex-col justify-between py-3 px-3 h-full w-full;
+}
+  .course-card .course-card-body .course-card-filip .course-card-body-back .course-back-content .teach-list{
+  @apply text-sm space-y-2 child:line-clamp-2 px-1;
+}
+  .course-card .course-card-body .course-card-filip .course-card-body-back .course-back-content .teach-list > li:before {
+    content: '✔';
+    @apply ml-1.5 text-green-500;
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-back .course-back-content .show-course {
+    @apply block bg-secondary-500 hover:bg-secondary-600 border-2 border-secondary-500 hover:border-secondary-600 w-full text-center text-white rounded-lg h-10 leading-10;
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-back .course-back-content .add-to-card-icon {
+    @apply border-2 border-secondary-500 hover:border-secondary-600 rounded-lg h-10 leading-10 px-2 text-secondary-500 hover:text-secondary-600 flex items-center justify-center;
+  }
+  .course-card .course-card-body .course-card-filip .course-card-body-back .course-back-content .save {
+@apply border-2 border-red-500 hover:border-red-600 rounded-lg h-10 leading-10 px-2 text-red-500 hover:text-red-600;
+  }
+  .course-card .footer-card {
+    @apply flex justify-between items-center gap-x-6 px-4 mb-4 border-t-2 pt-2 border-t-zinc-100 border border-tertiary-100 rounded-b-lg shadow-sm;
+  }
+  .course-card .footer-card .old-price{
+  @apply text-sm line-through decoration-red-400 decoration-1 decoration-wavy;
+}
+  .course-card .course-card-body .course-card-filip .course-card-body-front .course-info .total-student {
+    @apply flex items-center gap-1 text-zinc-500;
+  }
+  .header-section a span:nth-child(1) {
+    @apply left-0 top-0 w-[50.0%] h-[2px] duration-500 scale-x-0 origin-left;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+  }
+
+  .header-section a:hover span:nth-child(1) {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+
+  .header-section a span:nth-child(2) {
+    @apply right-0 bottom-0 w-[50.0%] h-[2px] origin-right;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+  }
+
+  .header-section a:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .header-section a span:nth-child(3) {
+    @apply right-0 bottom-0 w-[2px] h-full origin-top;
+    transition: transform 0.5s;
+    transform: scaleY(0);
+    transition-delay: 0.4s;
+  }
+
+  .header-section a:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+
+  .header-section a span:nth-child(4) {
+    @apply left-0 top-0 w-[2px] h-full origin-bottom;
+    transition: transform 0.5s;
+    transform: scaleY(0);
+    transition-delay: 0.4s;
+  }
+
+  .header-section a:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  .header-section a span:nth-child(5) {
+    @apply left-0 bottom-0 w-[50.0%] h-[2px] origin-right;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transition-delay: 0.8s;
+  }
+
+  .header-section a:hover span:nth-child(5) {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .header-section a span:nth-child(6) {
+    @apply right-0 top-0 w-[50.5%] h-[2px] origin-left;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transition-delay: 0.8s;
+  }
+
+  .header-section a:hover span:nth-child(6) {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  .teacher-card-slider {
+    @apply w-36 h-52 border shadow-md border-tertiary-100 rounded-lg p-4;
+  }
+  .teacher-card-slider .teacher-name {
+    @apply block my-4 text-xs font-semibold text-center text-tertiary-400 hover:text-tertiary-600 transition-colors duration-300 line-clamp-1;
+  }
+  .teacher-card-slider .teacher-course {
+    @apply flex items-center justify-center gap-x-1 text-xs font-bold text-primary-600;
+  }
+  .teacher_section_slider_prev {
+    @apply w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center !right-0 after:text-base after:text-slate-600 after:font-semibold;
+  }
+  .teacher_section_slider_next {
+    @apply w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center !left-0 after:text-base after:text-slate-600 after:font-semibold;
+  }
+  .swal2-popup {
+    @apply w-fit px-2 py-1;
+  }
+  .swal2-icon {
+    @apply my-4;
+  }
+  .swal2-title {
+    @apply text-sm;
+  }
+  .blog_section_slider_pagination .swiper-pagination-bullet {
+    @apply w-3 h-3;
+    transition: 0.2s all;
+  }
+  .blog_section_slider_pagination .swiper-pagination-bullet-active {
+    @apply h-8 w-3 rounded-lg bg-primary-500 shadow-[0_0_5px_#ff4500];
+  }
+  .opacity-animate {
+    animation: overlay-opacity 10s forwards;
+  }
+  @keyframes overlay-opacity {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  @keyframes text-top-animation {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+  }
+  @keyframes text-bottom-animation {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+  }
+  .blog-swiper-card.swiper-slide-active .overlay {
+    animation: overlay-opacity 1s forwards;
+  }
+  .blog-swiper-card.swiper-slide-active .title {
+    animation: text-top-animation 1s forwards;
+  }
+  .blog-swiper-card.swiper-slide-active .read-more {
+    animation: text-bottom-animation 1s forwards;
+  }
+  .subscription-form input[type="tel"],
+  .subscription-form input[type="email"] {
+    @apply placeholder:text-right placeholder:text-secondary-200 px-4 py-2 rounded-md focus:outline-none shadow;
+  }
+  .subscription-form input[type="submit"] {
+    @apply bg-secondary-500 hover:bg-secondary-600 px-4 py-2 rounded-md text-white transition-colors cursor-pointer;
+  }
+  .product-single-card::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 29px;
+    right: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #992900;
+    z-index: -1;
+  }
+
+  .ask-tab.active {
+    @apply text-primary-500;
+  }
+  .ask-tab.active .faq-tab-arrow {
+    transform: rotate(180deg);
+  }
+  @keyframes height-answer {
+    0% {
+      opacity: 0;
+      height: 0%;
+      transform: translateY(50px);
+    }
+    100% {
+      height: 100%;
+      opacity: 1;
+      transform: translateY(0px);
+      margin-bottom: 32px;
+    }
+  }
+  .ask-tab.active ~ .answer-tab {
+    animation: height-answer 0.4s forwards;
+  }
+  .course-title-list.active {
+    @apply text-primary-500;
+  }
+  .course-title-list.active .arrow-list-course {
+    @apply rotate-180;
+  }
+  .comment-tab.active {
+    @apply bg-secondary-600 text-white font-semibold;
+  }
+  .notifocation {
+    @apply py-2 px-4 rounded-md shadow;
+
+  }
+  .notifocation.danger-notification {
+    @apply bg-yellow-200;
+
+  }
+  .notifocation.success-notification{
+    @apply bg-green-200;
+
+  }
+  .card {
+    background:
+    linear-gradient(-62deg, rgba(255, 255, 255, 0.0), 
+      rgba(255, 255, 255, 0.0) 74%, 75%, 
+      rgba(255, 255, 255, 0.09) ), 
+    radial-gradient(ellipse at top left, 
+      rgb(25, 41, 54) 0%, rgb(4, 13, 21) 100%
+    );
+    
+    box-shadow: 0 1px 0px rgba(0, 0, 0, .4), 
+      0 0 2px rgba(0, 0, 0, .2), 
+      0 2px 2px rgba(0, 0, 0, .2), 
+      0 4px 8px rgba(0, 0, 0, .2);
+    
+    overflow: hidden;
+    background-blend-mode: color-dodge, normal;
+    background-repeat: no-repeat;
+    background-size: 200% 100%, 100% 100%;
+  }
+  .card:hover,
+  .card:focus {
+    animation: backgroundMove 350ms forwards ease;
+  }
+  @keyframes backgroundMove {
+    0% { background-size: 200% 100%, 100%, 100%; }
+    100% { background-size: 25% 100%, 100%, 100%; }
+  }
+  .card:before {
+    content: "";
+    width: 100%;
+    height: 64%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background: radial-gradient(at 50% 50%, 
+      rgba(96, 16, 48, 0) 2px, 
+      rgba(0, 0, 0, .2) 3px, 
+      rgba(96, 16, 48, 0) 3px),
+      
+      radial-gradient(at 40% 40%, 
+      rgba(96, 16, 48, 0) 2px, 
+      rgba(255, 255, 255, .15) 3px, 
+      rgba(96, 16, 48, 0) 3px), 
+      
+      radial-gradient(ellipse at 45% 45%, 
+      rgba(96, 16, 48, .10) 0px, 
+      rgba(255, 255, 255, .10) 2px, 
+      rgba(96, 16, 48, 0) 0px);
+    background-size: 8px 8px;
+    mix-blend-mode: overlay;
+    mix-blend-mode: color-dodge;
+    border-radius: inherit;
+    border-bottom: 1px solid rgba(255, 255, 255, .64);
+    opacity: .56;
+  }
+  .card-name,
+  .card-name-foil,
+  .card-name-foil-second {
+    position: absolute;
+    font-weight: 400;
+    font-family: var(--Poppins);
+    font-size: 1.15em;
+    text-align: left;
+    top: 32%;
+    left: 6%;
+    display: block;
+  }
+  
+  .card-name {
+    color: rgb(228, 229, 233);
+    text-shadow: 0 0 3px rgba(0, 0, 0, .7), -.5px -1px 1px rgba(255, 255, 255, .3), .5px 1px 1px rgba(0, 0, 0, .9);
+  }
+  
+  .card-name-foil,
+  .card-name-foil-second {
+    width: 300%;
+    
+    background: linear-gradient(var(--bgAngle),
+      rgba(193, 200, 209, 1) 0%,
+      rgba(253, 253, 253, 1) 3%,
+      rgba(253, 253, 253, 1) 9%, 
+      rgba(193, 200, 209, 1) 17%, 
+      rgba(253, 253, 253, 1) 25%, 
+      rgba(193, 200, 209, 1) 34%, 
+      rgba(253, 253, 253, 1) 41%,
+      rgba(193, 200, 209, 1) 46%,
+      rgba(193, 200, 209, 1) 50%,
+      rgba(193, 200, 209, 1) 53%,
+      rgba(253, 253, 253, 1) 55%, 
+      rgba(161, 167, 175, 1) 60%, 
+      rgba(239, 213, 202, 1) 65%, 
+      rgba(241, 238, 211, 1) 70%, 
+      rgba(221, 237, 225, 1) 75%, 
+      rgba(213, 226, 220, 1) 80%, 
+      rgba(219, 224, 235, 1) 85%, 
+      rgba(247, 225, 232, 1) 90%, 
+      rgba(253, 253, 253, 1) 95%, 
+      rgba(193, 200, 209, 1) 100%
+    );
+    
+    background-size: 100% 100%;
+    background-position: var(--bgPosition-x), var(--bgPosition-y);
+    background-blend-mode: difference;
+    mix-blend-mode: overlay;
+    
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      -ms-background-clip: text;
+      -ms-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    color: transparent;
+    clip-path: inset(1px);
+  }
+  
+  .card-name-foil-second {
+    mix-blend-mode: color-burn;
+  }
+  
+  .card-flag {
+    position: absolute;
+    right: 7px;
+    top: 45%;
+    border-radius: .5em;
+    transform: translate(0, 51px);
+    height: 45px;
+    width: 65px;
+  }
+  
+  .card-flag .card-security {
+    --margin: 5px;
+      width: calc(100% - (var(--margin) * 2));
+    width: 85%;
+    height: calc(100% - (var(--margin) * 2));
+    height: 85%;
+      background-color: rgba(97, 98, 107, 1);
+      border-radius: .5em;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      background: repeating-linear-gradient( 0deg, rgba(97, 98, 107, 1), rgba(97, 98, 107, 1) 5px, rgba(178, 170, 181, .8) 7px, rgba(178, 170, 181, .8) 5px );
+    overflow: hidden;
+    background-blend-mode: color-dodge;
+  }
+  
+  .card-flag .card-security:before,
+  .card-flag .card-security:after {
+    content: "2reha";
+    font-family: serif;
+    position: absolute;
+    top: 10%;
+    left: -7%;
+      color: rgba(178, 170, 181, .65);
+      font-size: 1.65em;
+    mix-blend-mode: multiply;
+    z-index: 3;
+  }
+  
+  .card-flag .card-security:before {
+    transform: translateX(25px);
+  }
+  
+  .card-flag .card-security:after {
+    transform: translateX(10px);
+  }
+  
+  .card-flag .card-security-foil {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+      width: 720%;
+    height: 250%;
+    transform: translate(0%, -50%);
+    border-radius: .5em;
+  }
+  .user-panel-tab.active {
+    @apply text-primary-600 hover:text-primary-600 hover:scale-100;
+  }
+  .current-pay {
+    background-image: url("../images/card-bg.webp");
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  }
+  .blogSingleSlider .swiper-pagination-bullet-active {
+    @apply bg-primary-500;
+  }
+  nav.woocommerce-breadcrumb {
+    @apply text-white/70 hidden xs:flex items-center gap-x-1 text-xs md:text-sm;
+  }
+  nav.woocommerce-breadcrumb a {
+    @apply text-white hover:text-primary-300 transition-colors;
+  }
+  .course-content-list-item {
+    @apply flex items-center gap-x-2 border-b border-b-slate-200 pb-4;
+  }
+  .course-content-list-item:last-child {
+    @apply border-b-0 pb-0;
+  }
+  .video-item-iframe {
+    @apply rounded-2xl overflow-hidden shadow-md w-[80%] aspect-video m-auto fixed top-0 left-0 right-0 bottom-0 z-40 transition-all duration-200 scale-0 child:h-full child:w-full child:aspect-video child:object-cover;
+  }
+  .video-item-iframe.active {
+    @apply scale-100;
+  }
+  .video-icon-close {
+    @apply fixed flex items-center justify-center left-4 top-4 bg-slate-50 rounded-full w-6 h-6 z-40 cursor-pointer transition-all duration-200 -translate-x-10;
+  }
+  .video-icon-close.active {
+    @apply -translate-x-0;
+  }
+  .theme-pagination {
+    @apply flex items-center justify-center rounded gap-x-2;
+  }
+  .theme-pagination span.page-numbers, .theme-pagination a.page-numbers  {
+    @apply inline-flex items-center justify-center rounded bg-slate-50 text-tertiary-400 shadow-sm h-10 w-10;
+  }
+  .theme-pagination a.page-numbers {
+    @apply hover:bg-slate-100 transition-colors;
+  }
+  .theme-pagination span.page-numbers.current {
+    @apply inline-flex items-center justify-center rounded h-10 w-10 bg-primary-500 shadow-sm text-white;
+  }
+  .add-to-card {
+    @apply w-full block bg-green-light hover:bg-green-dark py-2 text-center text-lg font-semibold rounded-lg text-white transition-colors;
+  }
+  .search-tab {
+    @apply bg-slate-100 py-1.5 px-3 rounded-lg text-zinc-500 hover:bg-slate-200 hover:text-zinc-700 transition-colors;
+  }
+  .search-tab.active {
+    @apply bg-primary-500 text-white hover:bg-primary-500 hover:text-white;
+  }
+}
+.woocommerce-Price-currencySymbol {
+  font-size: small;
+}
+a.added_to_cart.wc-forward {
+  display: none !important;
+}
+.footer-card .price {
+  @apply  flex items-center justify-between w-full;
+}
+.footer-card .price .woocommerce-Price-amount{
+  @apply w-full;
+}
+.footer-card .price .woocommerce-Price-amount bdi{
+  @apply w-fit mr-auto block text-lg font-medium text-secondary-600;
+}
+.footer-card .price del{
+  @apply no-underline text-sm text-zinc-600 relative;
+}
+.footer-card .price del .woocommerce-Price-amount bdi{
+  @apply text-sm text-zinc-600;
+}
+.footer-card .price del:after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  transform: rotate(-5deg);
+}
+.footer-card .price ins{
+  @apply order-1 no-underline;
+}
+.r1_iframe_embed {position: relative; overflow: hidden; width: 100%; height: auto; padding-top: 56.25%; }
+.r1_iframe_embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+.checkout-container {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-16;
+}
+.checkout-container .customer-detail {
+  @apply md:max-w-72;
+}
+.checkout-container .customer-detail .woocommerce-billing-fields > h3{
+  @apply font-semibold text-primary-600 mb-6;
+}
+.checkout-container .customer-detail .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper {
+  @apply space-y-4;
+}
+.checkout-container .customer-detail .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p > label {
+  @apply text-tertiary-400;
+}
+.checkout-container .customer-detail .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p span {
+  @apply block w-full;
+}
+.checkout-container .customer-detail .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p span > input {
+  @apply w-full border p-1.5 rounded focus:outline-0;
+}
+.checkout-container .customer-detail .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p span > input#billing_email {
+  @apply text-left;
+}
+.checkout-container .checkout-detail h3 {
+  @apply font-semibold text-primary-600 mb-6;
+}
+.checkout-container .checkout-detail .woocommerce-checkout-review-order table{
+ @apply text-right w-full;
+}
+.checkout-container .checkout-detail .woocommerce-checkout-review-order table tr {
+  @apply flex gap-x-8 justify-between;
+}
+.checkout-container .checkout-detail .woocommerce-checkout-review-order table tr.cart-subtotal {
+  @apply hidden;
+}
+.checkout-container .checkout-detail .woocommerce-checkout-review-order table tr td {
+  @apply block;
+}
+.checkout-container .checkout-detail .woocommerce-checkout-review-order table tr.cart_item > td.product-name > strong.product-quantity {
+  @apply hidden;
+}
+.checkout-container .checkout-detail .woocommerce-checkout-review-order .woocommerce-checkout-payment img {
+  @apply w-16 h-16;
+}
+.checkout-container .checkout-detail .woocommerce-checkout-review-order .woocommerce-checkout-payment .payment_box > p {
+  @apply bg-green-200 text-center p-4 rounded;
+}
+.checkout-container .checkout-detail .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order .woocommerce-terms-and-conditions-wrapper > .woocommerce-privacy-policy-text {
+  @apply text-sm text-justify;
+}
+.checkout-container .checkout-detail .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order .woocommerce-terms-and-conditions-wrapper > .woocommerce-privacy-policy-text p > a {
+  @apply text-secondary-500 font-semibold;
+}
+.checkout-container .checkout-detail .woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order button[type=submit]{
+  @apply w-fit mx-auto mt-4 bg-primary-500 block text-white px-6 py-2 rounded-md shadow hover:bg-primary-600 transition-colors;
+}
+.woocommerce .woocommerce-order .theme-order-section {
+  @apply flex flex-col md:flex-row justify-center items-center;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-detail-column {
+  @apply mb-4 md:mb-0 md:ml-8;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-detail-column > p {
+  @apply bg-green-200 py-1.5 px-3 rounded-lg mb-4;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-detail-column > ul {
+  @apply space-y-2 child:flex child:justify-between;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-course-column {
+  @apply pt-4 md:pt-0 md:pr-8 border-t-2 md:border-t-0 md:border-r-2 border-r-zinc-200 border-t-zinc-200 border-dashed;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card {
+  @apply w-72 border rounded-lg relative overflow-hidden shadow;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card .purchased{
+  @apply flex items-center gap-x-1 bg-slate-50/90 absolute left-1/2 -translate-x-1/2 w-max p-2 rounded-lg top-2 font-medium;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card h2.title {
+  @apply px-2 text-justify text-sm font-medium line-clamp-2 mt-2 text-zinc-600 hover:text-primary-700 transition-colors;
+}
+
+.comment-respond {
+  @apply my-6 px-4;
+}
+.comment-respond > h3.comment-reply-title {
+  @apply font-medium;
+}
+.comment-respond > form > p.logged-in-as {
+  @apply hidden;
+}
+.comment-respond > form p.comment-form-comment {
+  @apply mt-4;
+}
+.comment-respond > form p.comment-form-comment > label {
+  @apply hidden;
+}
+.comment-respond > form p.comment-form-comment textarea {
+  @apply w-full resize-none shadow rounded-lg p-4 focus:outline-0;
+}
+.comment-respond > form p.form-submit {
+  @apply text-left;
+}
+.comment-respond > form p.form-submit input.submit {
+  @apply bg-primary-500 cursor-pointer px-2 py-1.5 rounded-lg text-white text-sm hover:bg-primary-600 transition-colors;
+}
+.woocommerce .woocommerce-order .theme-order-section {
+  @apply flex flex-col md:flex-row justify-center items-center;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-detail-column {
+  @apply mb-4 md:mb-0 md:ml-8;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-detail-column > p {
+  @apply bg-green-200 py-1.5 px-3 rounded-lg mb-4;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-detail-column > ul {
+  @apply space-y-2 child:flex child:justify-between;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-course-column {
+  @apply pt-4 md:pt-0 md:pr-8 border-t-2 md:border-t-0 md:border-r-2 border-r-zinc-200 border-t-zinc-200 border-dashed;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card {
+  @apply w-72 border rounded-lg relative overflow-hidden shadow;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card .purchased{
+  @apply flex items-center gap-x-1 bg-slate-50/90 absolute left-1/2 -translate-x-1/2 w-max p-2 rounded-lg top-2 font-medium;
+}
+.woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card h2.title {
+  @apply px-2 text-justify text-sm font-medium line-clamp-2 mt-2 text-zinc-600 hover:text-primary-700 transition-colors;
+}

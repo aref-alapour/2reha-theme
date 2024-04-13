@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo/2reha-icon.webp"
+      type="image/x-icon"
+    />
+    <title>حساب کاربری - مدرس</title>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- All Icon Start -->
+    <svg class="hidden">
+      <symbol
+        id="search-icon"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>magnify</title>
+        <path
+          d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+        />
+      </symbol>
+      <symbol
+        id="loginRegister-icon"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>login</title>
+        <path
+          d="M11 7L9.6 8.4L12.2 11H2V13H12.2L9.6 15.6L11 17L16 12L11 7M20 19H12V21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3H12V5H20V19Z"
+        />
+      </symbol>
+      <symbol
+        id="teaching-icon"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>human-male-board-poll</title>
+        <path
+          d="M20 17C21.1 17 22 16.1 22 15V4C22 2.9 21.1 2 20 2H9.5C9.8 2.6 10 3.3 10 4H20V15H11V17M15 7V9H9V22H7V16H5V22H3V14H1.5V9C1.5 7.9 2.4 7 3.5 7H15M8 4C8 5.1 7.1 6 6 6S4 5.1 4 4 4.9 2 6 2 8 2.9 8 4M17 6H19V14H17V6M14 10H16V14H14V10M11 10H13V14H11V10Z"
+        />
+      </symbol>
+      <symbol
+        id="cat-1"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>cog</title>
+        <path
+          d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"
+        />
+      </symbol>
+      <symbol
+        id="cat-2"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>laptop</title>
+        <path
+          d="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z"
+        />
+      </symbol>
+      <symbol
+        id="cat-3"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>domain</title>
+        <path
+          d="M18,15H16V17H18M18,11H16V13H18M20,19H12V17H14V15H12V13H14V11H12V9H20M10,7H8V5H10M10,11H8V9H10M10,15H8V13H10M10,19H8V17H10M6,7H4V5H6M6,11H4V9H6M6,15H4V13H6M6,19H4V17H6M12,7V3H2V21H22V7H12Z"
+        />
+      </symbol>
+      <symbol
+        id="mobileMenu-icon"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>menu</title>
+        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+      </symbol>
+      <symbol
+        id="callSupport-icon"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>phone-outgoing</title>
+        <path
+          d="M4,3A1,1 0 0,0 3,4A17,17 0 0,0 20,21A1,1 0 0,0 21,20V16.5A1,1 0 0,0 20,15.5C18.75,15.5 17.55,15.3 16.43,14.93C16.08,14.82 15.69,14.9 15.41,15.17L13.21,17.37C10.38,15.93 8.06,13.62 6.62,10.78L8.82,8.57C9.1,8.31 9.18,7.92 9.07,7.57C8.7,6.45 8.5,5.25 8.5,4A1,1 0 0,0 7.5,3H4M15,3V4.5H18.5L13,10L14,11L19.5,5.5V9H21V3H15Z"
+        />
+      </symbol>
+      <symbol
+        id="mobileMenuClose-icon"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>close</title>
+        <path
+          d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
+        />
+      </symbol>
+      <symbol
+        id="course-icon"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>cast-education</title>
+        <path
+          d="M21,3H3A2,2 0 0,0 1,5V8H3V5H21V19H14V21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3M1,18V21H4A3,3 0 0,0 1,18M1,14V16A5,5 0 0,1 6,21H8A7,7 0 0,0 1,14M1,10V12A9,9 0 0,1 10,21H12C12,14.92 7.07,10 1,10M11,11.09V13.09L14.5,15L18,13.09V11.09L14.5,13L11,11.09M14.5,6L9,9L14.5,12L20,9L14.5,6Z"
+        />
+      </symbol>
+      <symbol
+        id="dont-like-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>heart-outline</title>
+        <path
+          d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+        />
+      </symbol>
+      <symbol
+        id="like-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>heart</title>
+        <path
+          d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
+        />
+      </symbol>
+      <symbol
+        id="user-student-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>account-question</title>
+        <path
+          d="M13,8A4,4 0 0,1 9,12A4,4 0 0,1 5,8A4,4 0 0,1 9,4A4,4 0 0,1 13,8M17,18V20H1V18C1,15.79 4.58,14 9,14C13.42,14 17,15.79 17,18M20.5,14.5V16H19V14.5H20.5M18.5,9.5H17V9A3,3 0 0,1 20,6A3,3 0 0,1 23,9C23,9.97 22.5,10.88 21.71,11.41L21.41,11.6C20.84,12 20.5,12.61 20.5,13.3V13.5H19V13.3C19,12.11 19.6,11 20.59,10.35L20.88,10.16C21.27,9.9 21.5,9.47 21.5,9A1.5,1.5 0 0,0 20,7.5A1.5,1.5 0 0,0 18.5,9V9.5Z"
+        />
+      </symbol>
+      <symbol
+        id="tik-fill-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>check-decagram</title>
+        <path
+          d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"
+        />
+      </symbol>
+      <symbol
+        id="arrow-left-fill-circle-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>arrow-left-bold-circle</title>
+        <path
+          d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M7,12L12,17V14H16V10H12V7L7,12Z"
+        />
+      </symbol>
+      <symbol
+        id="user-plus-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>account-plus-outline</title>
+        <path
+          d="M15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4M15,5.9C16.16,5.9 17.1,6.84 17.1,8C17.1,9.16 16.16,10.1 15,10.1A2.1,2.1 0 0,1 12.9,8A2.1,2.1 0 0,1 15,5.9M4,7V10H1V12H4V15H6V12H9V10H6V7H4M15,13C12.33,13 7,14.33 7,17V20H23V17C23,14.33 17.67,13 15,13M15,14.9C17.97,14.9 21.1,16.36 21.1,17V18.1H8.9V17C8.9,16.36 12,14.9 15,14.9Z"
+        />
+      </symbol>
+      <symbol
+        id="blog-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>post-outline</title>
+        <path
+          d="M19 5V19H5V5H19M21 3H3V21H21V3M17 17H7V16H17V17M17 15H7V14H17V15M17 12H7V7H17V12Z"
+        />
+      </symbol>
+      <symbol
+        id="arrow-left-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>chevron-left</title>
+        <path
+          d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+        />
+      </symbol>
+      <symbol
+        id="course-time-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>clock-check-outline</title>
+        <path
+          d="M23.5 17L18.5 22L15 18.5L16.5 17L18.5 19L22 15.5L23.5 17M13.1 19.9C12.7 20 12.4 20 12 20C7.6 20 4 16.4 4 12S7.6 4 12 4 20 7.6 20 12C20 12.4 20 12.7 19.9 13.1C20.6 13.2 21.2 13.4 21.8 13.7C21.9 13.1 22 12.6 22 12C22 6.5 17.5 2 12 2S2 6.5 2 12C2 17.5 6.5 22 12 22C12.6 22 13.2 21.9 13.7 21.8C13.4 21.3 13.2 20.6 13.1 19.9M15.6 14.1L12.5 12.3V7H11V13L14.5 15.1C14.8 14.7 15.2 14.4 15.6 14.1Z"
+        />
+      </symbol>
+      <symbol
+        id="course-video-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>video-check-outline</title>
+        <path
+          d="M15 8V16H5V8H15M16 6H4C3.45 6 3 6.45 3 7V17C3 17.55 3.45 18 4 18H16C16.55 18 17 17.55 17 17V13.5L21 17.5V6.5L17 10.5V7C17 6.45 16.55 6 16 6M6.35 12.08L7.5 10.95L9 12.5L12.5 9L13.65 10.37L9 15L6.35 12.08Z"
+        />
+      </symbol>
+      <symbol
+        id="course-level-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>file-chart-check-outline</title>
+        <path
+          d="M23.5 17L18.5 22L15 18.5L16.5 17L18.5 19L22 15.5L23.5 17M6 2C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H13.8C13.4 21.4 13.2 20.7 13.1 20H6V4H13V9H18V13.1C18.3 13 18.7 13 19 13C19.3 13 19.7 13 20 13.1V8L14 2H6M11 11V19H13V11H11M7 13V19H9V13H7Z"
+        />
+      </symbol>
+      <symbol
+        id="support-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>face-agent</title>
+        <path
+          d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z"
+        />
+      </symbol>
+      <symbol
+        id="course-update-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>calendar-clock-outline</title>
+        <path
+          d="M6 1V3H5C3.89 3 3 3.89 3 5V19C3 20.1 3.89 21 5 21H11.1C12.36 22.24 14.09 23 16 23C19.87 23 23 19.87 23 16C23 14.09 22.24 12.36 21 11.1V5C21 3.9 20.11 3 19 3H18V1H16V3H8V1M5 5H19V7H5M5 9H19V9.67C18.09 9.24 17.07 9 16 9C12.13 9 9 12.13 9 16C9 17.07 9.24 18.09 9.67 19H5M16 11.15C18.68 11.15 20.85 13.32 20.85 16C20.85 18.68 18.68 20.85 16 20.85C13.32 20.85 11.15 18.68 11.15 16C11.15 13.32 13.32 11.15 16 11.15M15 13V16.69L18.19 18.53L18.94 17.23L16.5 15.82V13Z"
+        />
+      </symbol>
+      <symbol
+        id="arrow-down-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>chevron-down</title>
+        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+      </symbol>
+      <symbol
+        id="youtube-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>youtube</title>
+        <path
+          d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"
+        />
+      </symbol>
+      <symbol
+        id="faq-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>progress-question</title>
+        <path
+          d="M13 18H11V16H13V18M13 15H11C11 11.75 14 12 14 10C14 8.9 13.1 8 12 8C10.9 8 10 8.9 10 10H8C8 7.79 9.79 6 12 6C14.21 6 16 7.79 16 10C16 12.5 13 12.75 13 15M22 12C22 17.18 18.05 21.45 13 21.95V19.94C16.95 19.45 20 16.08 20 12C20 7.92 16.95 4.55 13 4.06V2.05C18.05 2.55 22 6.82 22 12M11 2.05V4.06C9.54 4.24 8.2 4.82 7.09 5.68L5.67 4.26C7.15 3.05 9 2.25 11 2.05M4.06 11H2.05C2.25 9 3.05 7.15 4.26 5.67L5.68 7.1C4.82 8.2 4.24 9.54 4.06 11M11 19.94V21.95C9 21.75 7.15 20.96 5.67 19.74L7.09 18.32C8.2 19.18 9.54 19.76 11 19.94M2.05 13H4.06C4.24 14.46 4.82 15.8 5.68 16.91L4.26 18.33C3.05 16.85 2.25 15 2.05 13Z"
+        />
+      </symbol>
+      <symbol
+        id="course-list-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>format-list-bulleted</title>
+        <path
+          d="M7,5H21V7H7V5M7,13V11H21V13H7M4,4.5A1.5,1.5 0 0,1 5.5,6A1.5,1.5 0 0,1 4,7.5A1.5,1.5 0 0,1 2.5,6A1.5,1.5 0 0,1 4,4.5M4,10.5A1.5,1.5 0 0,1 5.5,12A1.5,1.5 0 0,1 4,13.5A1.5,1.5 0 0,1 2.5,12A1.5,1.5 0 0,1 4,10.5M7,19V17H21V19H7M4,16.5A1.5,1.5 0 0,1 5.5,18A1.5,1.5 0 0,1 4,19.5A1.5,1.5 0 0,1 2.5,18A1.5,1.5 0 0,1 4,16.5Z"
+        />
+      </symbol>
+      <symbol
+        id="lock-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>lock-outline</title>
+        <path
+          d="M12,17C10.89,17 10,16.1 10,15C10,13.89 10.89,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z"
+        />
+      </symbol>
+      <symbol
+        id="onlock-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>lock-open-variant-outline</title>
+        <path
+          d="M10 13C11.1 13 12 13.89 12 15C12 16.11 11.11 17 10 17S8 16.11 8 15 8.9 13 10 13M18 1C15.24 1 13 3.24 13 6V8H4C2.9 8 2 8.9 2 10V20C2 21.1 2.9 22 4 22H16C17.1 22 18 21.1 18 20V10C18 8.9 17.1 8 16 8H15V6C15 4.34 16.34 3 18 3S21 4.34 21 6V8H23V6C23 3.24 20.76 1 18 1M16 10V20H4V10H16Z"
+        />
+      </symbol>
+      <symbol
+        id="check-circle-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>check-circle-outline</title>
+        <path
+          d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
+        />
+      </symbol>
+      <symbol
+        id="star-outline-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>star-outline</title>
+        <path
+          d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+        />
+      </symbol>
+      <symbol
+        id="star-fill-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>star</title>
+        <path
+          d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+        />
+      </symbol>
+      <symbol
+        id="course-count-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>folder-play-outline</title>
+        <path
+          d="M22 8V13.81C21.39 13.46 20.72 13.22 20 13.09V8H4V18H13.09C13.04 18.33 13 18.66 13 19C13 19.34 13.04 19.67 13.09 20H4C2.9 20 2 19.11 2 18V6C2 4.89 2.89 4 4 4H10L12 6H20C21.1 6 22 6.89 22 8M17 22L22 19L17 16V22Z"
+        />
+      </symbol>
+      <symbol
+        id="teacher-in-time-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>timeline-clock-outline</title>
+        <path
+          d="M4 2V8H2V2H4M2 22V16H4V22H2M5 12C5 13.11 4.11 14 3 14C1.9 14 1 13.11 1 12C1 10.9 1.9 10 3 10C4.11 10 5 10.9 5 12M16 4C20.42 4 24 7.58 24 12C24 16.42 20.42 20 16 20C12.4 20 9.36 17.62 8.35 14.35L6 12L8.35 9.65C9.36 6.38 12.4 4 16 4M16 6C12.69 6 10 8.69 10 12C10 15.31 12.69 18 16 18C19.31 18 22 15.31 22 12C22 8.69 19.31 6 16 6M15 13V8H16.5V12.2L19.5 14L18.68 15.26L15 13Z"
+        />
+      </symbol>
+      <symbol
+        id="my-sell-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>cart-check</title>
+        <path
+          d="M9 20C9 21.1 8.1 22 7 22S5 21.1 5 20 5.9 18 7 18 9 18.9 9 20M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8M18 2.8L16.6 1.4L11.8 6.2L9.2 3.6L7.8 5L11.8 9L18 2.8Z"
+        />
+      </symbol>
+      <symbol
+        id="user-profile-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>badge-account-outline</title>
+        <path
+          d="M17,3H14V5H17V21H7V5H10V3H7A2,2 0 0,0 5,5V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V5A2,2 0 0,0 17,3M12,7A2,2 0 0,1 14,9A2,2 0 0,1 12,11A2,2 0 0,1 10,9A2,2 0 0,1 12,7M16,15H8V14C8,12.67 10.67,12 12,12C13.33,12 16,12.67 16,14V15M16,18H8V17H16V18M12,20H8V19H12V20M13,5H11V1H13V5Z"
+        />
+      </symbol>
+      <symbol
+        id="logout-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>logout</title>
+        <path
+          d="M17 7L15.59 8.41L18.17 11H8V13H18.17L15.59 15.58L17 17L22 12M4 5H12V3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H12V19H4V5Z"
+        />
+      </symbol>
+      <symbol
+        id="wallet-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>wallet-bifold-outline</title>
+        <path
+          d="M15.5 15.5C16.33 15.5 17 14.83 17 14C17 13.17 16.33 12.5 15.5 12.5C14.67 12.5 14 13.17 14 14C14 14.83 14.67 15.5 15.5 15.5M7 3H17C18.11 3 19 3.9 19 5V7C20.11 7 21 7.9 21 9V19C21 20.11 20.11 21 19 21H7C4.79 21 3 19.21 3 17V7C3 4.79 4.79 3 7 3M17 7V5H7C5.9 5 5 5.9 5 7V7.54C5.59 7.2 6.27 7 7 7H17M5 17C5 18.11 5.9 19 7 19H19V9H7C5.9 9 5 9.9 5 11V17Z"
+        />
+      </symbol>
+      <symbol
+        id="dashboard-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <title>view-dashboard-outline</title>
+        <path
+          d="M19,5V7H15V5H19M9,5V11H5V5H9M19,13V19H15V13H19M9,17V19H5V17H9M21,3H13V9H21V3M11,3H3V13H11V3M21,11H13V21H21V11M11,15H3V21H11V15Z"
+        />
+      </symbol>
+      <symbol id="danger-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <title>close-octagon</title><path d="M8.27,3L3,8.27V15.73L8.27,21H15.73L21,15.73V8.27L15.73,3M8.41,7L12,10.59L15.59,7L17,8.41L13.41,12L17,15.59L15.59,17L12,13.41L8.41,17L7,15.59L10.59,12L7,8.41" /></symbol>
+      <symbol id="chart-sell-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <title>finance</title><path d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64" /></symbol>
+      <symbol id="info-outline-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <title>alert-circle-check-outline</title><path d="M18.75 22.16L16 19.16L17.16 18L18.75 19.59L22.34 16L23.5 17.41L18.75 22.16M11 15H13V17H11V15M11 7H13V13H11V7M12 2C17.5 2 22 6.5 22 12L21.92 13.31C21.31 13.11 20.67 13 19.94 13L20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C12.71 20 13.39 19.91 14.05 19.74C14.13 20.42 14.33 21.06 14.62 21.65C13.78 21.88 12.9 22 12 22C6.47 22 2 17.5 2 12C2 6.5 6.47 2 12 2Z" /></symbol>
+      <symbol id="arrow-right-thin-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <title>arrow-right-thin</title><path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" /></symbol>
+      <symbol id="arrow-left-thin-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <title>arrow-left-thin</title><path d="M10.05 16.94V12.94H18.97L19 10.93H10.05V6.94L5.05 11.94Z" /></symbol>
+    </svg>
+    <!-- All Icon End -->
+    <!-- Header Start -->
+    <header class="shadow bg-slate-50 sticky top-0 z-20">
+      <div class="container hidden md:block">
+        <div class="flex justify-between items-center h-20">
+          <div class="md:w-28 lg:w-36 xl:w-fit">
+            <a href="#"><img src="./assets/images/logo/logo-website.png" alt=""/></a>
+          </div>
+          <div
+            class="relative flex justify-between items-center px-4 bg-slate-200 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-md group">
+            <input
+              class="flex-1 ml-2 bg-transparent py-2 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+              type="search"
+              name="s"
+              id=""
+              placeholder="جستجو کنید..."/>
+            <span
+              class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"
+            ></span>
+            <button class="cursor-pointer">
+              <svg class="w-4 h-4 xl:w-5 xl:h-5 animate-scale">
+                <use href="#search-icon"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="flex gap-2">
+            <a
+              href="#"
+              class="flex items-center h-10 px-4 gap-x-1 loginRegister cursor-pointer bg-secondary-500 hover:bg-secondary-600 text-white rounded-lg transition-all hover:shadow-sm text-xs lg:text-sm xl:text-base"
+            >
+              <svg class="w-5 h-5 hidden lg:inline-block">
+                <use href="#teaching-icon"></use>
+              </svg>
+              تدریس در دوره‌ها
+            </a>
+            <div class="user-panel relative group">
+              <button type="button" class="btn-primary">
+                <svg class="w-5 h-5 hidden lg:inline-block">
+                  <use href="#user-profile-icon"></use>
+                </svg>
+                حساب کاربری
+              </button>
+              <div
+                class="absolute bg-primary-100 translate-y-10 opacity-0 invisible w-full mt-1 z-40 p-4 rounded-md shadow group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible transition-all delay-200"
+              >
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-flex gap-x-1 items-center text-tertiary-500 hover:text-tertiary-800 hover:scale-110 transition-all"
+                    >
+                      <svg class="w-5 h-5">
+                        <use href="#dashboard-icon"></use></svg>پیشخوان</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-flex gap-x-1 items-center text-tertiary-500 hover:text-tertiary-800 hover:scale-110 transition-all"
+                      ><svg class="w-5 h-5">
+                        <use href="#my-sell-icon"></use></svg>دوره‌های من</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-flex gap-x-1 items-center text-tertiary-500 hover:text-tertiary-800 hover:scale-110 transition-all"
+                      ><svg class="w-5 h-5">
+                        <use href="#dont-like-icon"></use></svg>علاقه‌مندی‌ها</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-flex gap-x-1 items-center text-tertiary-500 hover:text-tertiary-800 hover:scale-110 transition-all"
+                      ><svg class="w-5 h-5">
+                        <use href="#wallet-icon"></use></svg>کیف پول</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-flex gap-x-1 items-center text-tertiary-500 hover:text-tertiary-800 hover:scale-110 transition-all"
+                      ><svg class="w-5 h-5">
+                        <use href="#user-profile-icon"></use></svg>پروفایل</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-flex gap-x-1 items-center text-tertiary-500 hover:text-tertiary-800 hover:scale-110 transition-all"
+                      ><svg class="w-5 h-5">
+                        <use href="#logout-icon"></use></svg>خروج</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <nav>
+            <ul
+              class="flex items-center gap-x-4 xl:gap-x-8 py-4 md:text-xs lg:text-sm xl:text-base"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-1"></use>
+                  </svg>
+                  مواد و متالورژی
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-2"></use>
+                  </svg>
+                  کامپیوتر و IT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-3"></use>
+                  </svg>
+                  کسب و کار
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-1"></use>
+                  </svg>
+                  مواد و متالورژی
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-2"></use>
+                  </svg>
+                  کامپیوتر و IT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-3"></use>
+                  </svg>
+                  کسب و کار
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-3"></use>
+                  </svg>
+                  کسب و کار
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div
+            class="text-sm lg:font-medium xl:font-bold text-secondary-600 hidden lg:flex"
+          >
+            پشتیبانی: 340 303 91 - 021
+          </div>
+        </div>
+      </div>
+      <div class="container py-4 md:hidden">
+        <div class="flex justify-between items-center mb-2">
+          <div id="mobileMenuIcon">
+            <svg class="w-4 h-4 text-secondary-800">
+              <use href="#mobileMenu-icon"></use>
+            </svg>
+          </div>
+          <div class="w-24">
+            <a href="#"
+              ><img src="./assets/images/logo/logo-website.png" alt=""
+            /></a>
+          </div>
+          <div class="relative text-xs font-bold text-secondary-600">
+            340 303 91 - 021
+            <svg class="absolute -top-2 w-3 h-3 text-secondary-600">
+              <use href="#callSupport-icon"></use>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="relative flex justify-between items-center px-4 bg-slate-200 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-md group"
+        >
+          <input
+            class="flex-1 ml-2 bg-transparent py-2 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+            type="search"
+            name="s"
+            id=""
+            placeholder="جستجو کنید..."
+          />
+          <span
+            class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"
+          ></span>
+          <button class="cursor-pointer">
+            <svg class="w-4 h-4 xl:w-5 xl:h-5 animate-scale">
+              <use href="#search-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- mobileMenu -->
+    <section
+      id="MobileMenuSection"
+      class="fixed md:hidden top-4 bottom-4 right-4 bg-slate-50 w-72 z-40 py-4 px-8 rounded-lg transition-all duration-500 translate-x-80"
+    >
+      <div class="w-24 mx-auto">
+        <a href="#"
+          ><img src="./assets/images/logo/logo-website.png" alt=""
+        /></a>
+      </div>
+      <div class="flex gap-2 my-4">
+        <a
+          href="#"
+          class="flex items-center h-10 px-4 gap-x-1 loginRegister cursor-pointer bg-secondary-500 hover:bg-secondary-600 text-white rounded-lg transition-all hover:shadow-sm text-xs lg:text-sm xl:text-base"
+        >
+          <svg class="w-5 h-5 hidden lg:inline-block">
+            <use href="#teaching-icon"></use>
+          </svg>
+          تدریس در دوره‌ها
+        </a>
+        <button
+          type="button"
+          class="flex items-center h-10 px-4 gap-x-1 loginRegister cursor-pointer bg-primary-500 hover:bg-primary-600 text-white rounded-md transition-all hover:shadow-sm text-xs lg:text-sm xl:text-base user-panel"
+        >
+          <svg class="w-5 h-5 hidden lg:inline-block">
+            <use href="#loginRegister-icon"></use>
+          </svg>
+          حساب کاربری
+        </button>
+      </div>
+      <div
+        class="relative flex justify-between items-center px-4 bg-slate-200 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-md group"
+      >
+        <input
+          class="flex-1 ml-2 bg-transparent py-2 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+          type="search"
+          name="s"
+          id=""
+          placeholder="جستجو کنید..."
+        />
+        <span
+          class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"
+        ></span>
+        <button class="cursor-pointer">
+          <svg class="w-4 h-4 xl:w-5 xl:h-5 animate-scale">
+            <use href="#search-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Tabs -->
+      <div
+        class="flex mt-4 justify-center items-center text-sm font-medium gap-x-4"
+      >
+        <div class="tabs-title active" data-menu="tab-site">منوی سایت</div>
+        <div class="tabs-title" data-menu="tab-category">دسته بندی‌</div>
+      </div>
+      <div>
+        <div class="tab-content" id="tab-site">
+          <nav>
+            <ul class="flex flex-col items-start gap-y-4 text-xs mt-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-1"></use>
+                  </svg>
+                  خانه
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-2"></use>
+                  </svg>
+                  کامپیوتر و IT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-3"></use>
+                  </svg>
+                  کسب و کار
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-1"></use>
+                  </svg>
+                  مواد و متالورژی
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-2"></use>
+                  </svg>
+                  کامپیوتر و IT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-3"></use>
+                  </svg>
+                  کسب و کار
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-3"></use>
+                  </svg>
+                  کسب و کار
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="tab-content hidden" id="tab-category">
+          <nav>
+            <ul class="flex flex-col items-start gap-y-4 text-xs mt-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-1"></use>
+                  </svg>
+                  مواد و متالورژی
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-2"></use>
+                  </svg>
+                  کامپیوتر و IT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-3"></use>
+                  </svg>
+                  کسب و کار
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-1"></use>
+                  </svg>
+                  مواد و متالورژی
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-2"></use>
+                  </svg>
+                  کامپیوتر و IT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-3"></use>
+                  </svg>
+                  کسب و کار
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-tertiary-600 flex gap-x-1 items-center menu-btn"
+                >
+                  <svg class="w-4 h-4">
+                    <use href="#cat-3"></use>
+                  </svg>
+                  کسب و کار
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <div
+      class="fixed flex md:hidden items-center justify-center left-4 top-4 bg-slate-50 rounded-full w-6 h-6 z-40 transition-all duration-200 -translate-x-10"
+      id="MenuCloseIcon"
+    >
+      <svg class="w-5 h-5 text-red-600">
+        <use href="#mobileMenuClose-icon"></use>
+      </svg>
+    </div>
+    <!-- Header End -->
+    <!-- 
+      MainContent Start 
+    -->
+<!-- CategorySearchBox -->
+    <div class="container">
+      <div class="flex items-center justify-between border rounded shadow py-4 px-8 mt-8 flex-wrap sm:flex-nowrap gap-4">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20">
+          <img src="./assets/images/site/2reha-icon-150x150.webp" alt="">
+        </div>
+        <div class="order-1 sm:order-none w-full sm:w-fit">
+          <form action="" method="get" class="flex bg-slate-50 px-2 rounded shadow-sm w-full sm:w-auto">
+            <input type="text" name="" id="" placeholder="جستجو در این صفحه" class="bg-transparent text-tertiary-600 py-2 text-sm md:text-base w-full sm:w-52 md:w-72 focus:outline-0">
+            <button class="bg-transparent text-tertiary-600"><svg class="w-5 h-5"><use href="#search-icon"></use></svg></button>
+          </form>
+        </div>
+        <div>
+          <select class="focus:outline-0 text-sm md:text-base">
+            <option value="0">جدیدترین‌ها</option>
+            <option value="0">محبوب‌ترین‌ها</option>
+            <option value="0">ارزان‌ترین‌ها</option>
+            <option value="0">گران‌ترین‌ها</option>
+            <option value="0">جدیدترین‌ها</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+<!-- CategoryContant -->
+    <div class="container">
+      <div class="my-8 grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="course-card">
+          <div class="course-card-body group">
+            <div class="course-card-filip group-hover:rotate-y-180">
+              <div class="course-card-body-front">
+                <div class="purchased">
+                  <svg class="w-4 h-4 text-green-light">
+                    <use href="#tik-fill-icon"></use>
+                  </svg>
+                  قبلا خریداری شده
+                </div>
+                <div class="off">8<span>%</span></div>
+                <div class="image">
+                  <img src="./assets/images/course/01.webp" alt=""/>
+                </div>
+                <div class="course-detail">
+                  <div class="flex gap-1 items-center">
+                    <span class="text-xs mt-[4px]">5.0</span>
+                    <svg class="w-4 h-4 text-amber-400">
+                      <use href="#star-fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <span>4 ساعت</span>
+                    <span> و </span>
+                    <span>30 دقیقه</span>
+                  </div>
+                </div>
+                <h2 class="title">
+                  کلید فولاد مبارکه اصفهان کلید فولاد مبارکه اصفهان کلید فولاد
+                  مبارکه اصفهان
+                </h2>
+                <div class="course-info">
+                  <div class="teacher">
+                    <svg class="w-5 h-5">
+                      <use href="#teaching-icon"></use>
+                    </svg>
+                    <span class="text-xs">محمدرضا سلطان محمدی</span>
+                  </div>
+
+                  <div class="total-student">
+                    <span class="text-xs font-medium">54</span>
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="course-card-body-back">
+                <div class="course-back-content">
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium mb-2">تو این دوره چی می‌آموزیم؟</div>
+                    <ul class="teach-list">
+                      <li>عنوان آموختنی اول</li>
+                      <li>عنوان آموختنی دوم</li>
+                      <li>عنوان آموختنی سوم متن طولانی در دو خط خلاصه خواهد شد (متن متن متن متن متن متن متن) و سه نقطه قرار خواهد گرفت</li>
+                      <li>عنوان آموختنی چهارم</li>
+                      <li>و...</li>
+                    </ul>
+                  </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="show-course">مشاهده دوره</a>
+                    <button
+                            type="button"
+                            class="add-to-card-icon"
+                            data-course-card="false">
+                      <svg class="w-6 h-6">
+                        <use href="#add-to-cart-icon"></use>
+                      </svg>
+                    </button>
+                    <button class="save" data-like="false">
+                      <svg class="dont-like w-6 h-6">
+                        <use href="#dont-like-icon"></use>
+                      </svg>
+                      <svg class="like w-6 h-6" style="display: none">
+                        <use href="#like-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="old-price">349,000 <span class="text-xs">تومان</span></div>
+            <div class="new-price">200,000 <span class="text-sm">تومان</span></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card-body group">
+            <div class="course-card-filip group-hover:rotate-y-180">
+              <div class="course-card-body-front">
+                <div class="purchased">
+                  <svg class="w-4 h-4 text-green-light">
+                    <use href="#tik-fill-icon"></use>
+                  </svg>
+                  قبلا خریداری شده
+                </div>
+                <div class="off">8<span>%</span></div>
+                <div class="image">
+                  <img src="./assets/images/course/01.webp" alt=""/>
+                </div>
+                <div class="course-detail">
+                  <div class="flex gap-1 items-center">
+                    <span class="text-xs mt-[4px]">5.0</span>
+                    <svg class="w-4 h-4 text-amber-400">
+                      <use href="#star-fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <span>4 ساعت</span>
+                    <span> و </span>
+                    <span>30 دقیقه</span>
+                  </div>
+                </div>
+                <h2 class="title">
+                  کلید فولاد مبارکه اصفهان کلید فولاد مبارکه اصفهان کلید فولاد
+                  مبارکه اصفهان
+                </h2>
+                <div class="course-info">
+                  <div class="teacher">
+                    <svg class="w-5 h-5">
+                      <use href="#teaching-icon"></use>
+                    </svg>
+                    <span class="text-xs">محمدرضا سلطان محمدی</span>
+                  </div>
+
+                  <div class="total-student">
+                    <span class="text-xs font-medium">54</span>
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="course-card-body-back">
+                <div class="course-back-content">
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium mb-2">تو این دوره چی می‌آموزیم؟</div>
+                    <ul class="teach-list">
+                      <li>عنوان آموختنی اول</li>
+                      <li>عنوان آموختنی دوم</li>
+                      <li>عنوان آموختنی سوم متن طولانی در دو خط خلاصه خواهد شد (متن متن متن متن متن متن متن) و سه نقطه قرار خواهد گرفت</li>
+                      <li>عنوان آموختنی چهارم</li>
+                      <li>و...</li>
+                    </ul>
+                  </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="show-course">مشاهده دوره</a>
+                    <button
+                            type="button"
+                            class="add-to-card-icon"
+                            data-course-card="false">
+                      <svg class="w-6 h-6">
+                        <use href="#add-to-cart-icon"></use>
+                      </svg>
+                    </button>
+                    <button class="save" data-like="false">
+                      <svg class="dont-like w-6 h-6">
+                        <use href="#dont-like-icon"></use>
+                      </svg>
+                      <svg class="like w-6 h-6" style="display: none">
+                        <use href="#like-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="old-price">349,000 <span class="text-xs">تومان</span></div>
+            <div class="new-price">200,000 <span class="text-sm">تومان</span></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card-body group">
+            <div class="course-card-filip group-hover:rotate-y-180">
+              <div class="course-card-body-front">
+                <div class="purchased">
+                  <svg class="w-4 h-4 text-green-light">
+                    <use href="#tik-fill-icon"></use>
+                  </svg>
+                  قبلا خریداری شده
+                </div>
+                <div class="off">8<span>%</span></div>
+                <div class="image">
+                  <img src="./assets/images/course/01.webp" alt=""/>
+                </div>
+                <div class="course-detail">
+                  <div class="flex gap-1 items-center">
+                    <span class="text-xs mt-[4px]">5.0</span>
+                    <svg class="w-4 h-4 text-amber-400">
+                      <use href="#star-fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <span>4 ساعت</span>
+                    <span> و </span>
+                    <span>30 دقیقه</span>
+                  </div>
+                </div>
+                <h2 class="title">
+                  کلید فولاد مبارکه اصفهان کلید فولاد مبارکه اصفهان کلید فولاد
+                  مبارکه اصفهان
+                </h2>
+                <div class="course-info">
+                  <div class="teacher">
+                    <svg class="w-5 h-5">
+                      <use href="#teaching-icon"></use>
+                    </svg>
+                    <span class="text-xs">محمدرضا سلطان محمدی</span>
+                  </div>
+
+                  <div class="total-student">
+                    <span class="text-xs font-medium">54</span>
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="course-card-body-back">
+                <div class="course-back-content">
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium mb-2">تو این دوره چی می‌آموزیم؟</div>
+                    <ul class="teach-list">
+                      <li>عنوان آموختنی اول</li>
+                      <li>عنوان آموختنی دوم</li>
+                      <li>عنوان آموختنی سوم متن طولانی در دو خط خلاصه خواهد شد (متن متن متن متن متن متن متن) و سه نقطه قرار خواهد گرفت</li>
+                      <li>عنوان آموختنی چهارم</li>
+                      <li>و...</li>
+                    </ul>
+                  </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="show-course">مشاهده دوره</a>
+                    <button
+                            type="button"
+                            class="add-to-card-icon"
+                            data-course-card="false">
+                      <svg class="w-6 h-6">
+                        <use href="#add-to-cart-icon"></use>
+                      </svg>
+                    </button>
+                    <button class="save" data-like="false">
+                      <svg class="dont-like w-6 h-6">
+                        <use href="#dont-like-icon"></use>
+                      </svg>
+                      <svg class="like w-6 h-6" style="display: none">
+                        <use href="#like-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="old-price">349,000 <span class="text-xs">تومان</span></div>
+            <div class="new-price">200,000 <span class="text-sm">تومان</span></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card-body group">
+            <div class="course-card-filip group-hover:rotate-y-180">
+              <div class="course-card-body-front">
+                <div class="purchased">
+                  <svg class="w-4 h-4 text-green-light">
+                    <use href="#tik-fill-icon"></use>
+                  </svg>
+                  قبلا خریداری شده
+                </div>
+                <div class="off">8<span>%</span></div>
+                <div class="image">
+                  <img src="./assets/images/course/01.webp" alt=""/>
+                </div>
+                <div class="course-detail">
+                  <div class="flex gap-1 items-center">
+                    <span class="text-xs mt-[4px]">5.0</span>
+                    <svg class="w-4 h-4 text-amber-400">
+                      <use href="#star-fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <span>4 ساعت</span>
+                    <span> و </span>
+                    <span>30 دقیقه</span>
+                  </div>
+                </div>
+                <h2 class="title">
+                  کلید فولاد مبارکه اصفهان کلید فولاد مبارکه اصفهان کلید فولاد
+                  مبارکه اصفهان
+                </h2>
+                <div class="course-info">
+                  <div class="teacher">
+                    <svg class="w-5 h-5">
+                      <use href="#teaching-icon"></use>
+                    </svg>
+                    <span class="text-xs">محمدرضا سلطان محمدی</span>
+                  </div>
+
+                  <div class="total-student">
+                    <span class="text-xs font-medium">54</span>
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="course-card-body-back">
+                <div class="course-back-content">
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium mb-2">تو این دوره چی می‌آموزیم؟</div>
+                    <ul class="teach-list">
+                      <li>عنوان آموختنی اول</li>
+                      <li>عنوان آموختنی دوم</li>
+                      <li>عنوان آموختنی سوم متن طولانی در دو خط خلاصه خواهد شد (متن متن متن متن متن متن متن) و سه نقطه قرار خواهد گرفت</li>
+                      <li>عنوان آموختنی چهارم</li>
+                      <li>و...</li>
+                    </ul>
+                  </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="show-course">مشاهده دوره</a>
+                    <button
+                            type="button"
+                            class="add-to-card-icon"
+                            data-course-card="false">
+                      <svg class="w-6 h-6">
+                        <use href="#add-to-cart-icon"></use>
+                      </svg>
+                    </button>
+                    <button class="save" data-like="false">
+                      <svg class="dont-like w-6 h-6">
+                        <use href="#dont-like-icon"></use>
+                      </svg>
+                      <svg class="like w-6 h-6" style="display: none">
+                        <use href="#like-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="old-price">349,000 <span class="text-xs">تومان</span></div>
+            <div class="new-price">200,000 <span class="text-sm">تومان</span></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card-body group">
+            <div class="course-card-filip group-hover:rotate-y-180">
+              <div class="course-card-body-front">
+                <div class="purchased">
+                  <svg class="w-4 h-4 text-green-light">
+                    <use href="#tik-fill-icon"></use>
+                  </svg>
+                  قبلا خریداری شده
+                </div>
+                <div class="off">8<span>%</span></div>
+                <div class="image">
+                  <img src="./assets/images/course/01.webp" alt=""/>
+                </div>
+                <div class="course-detail">
+                  <div class="flex gap-1 items-center">
+                    <span class="text-xs mt-[4px]">5.0</span>
+                    <svg class="w-4 h-4 text-amber-400">
+                      <use href="#star-fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <span>4 ساعت</span>
+                    <span> و </span>
+                    <span>30 دقیقه</span>
+                  </div>
+                </div>
+                <h2 class="title">
+                  کلید فولاد مبارکه اصفهان کلید فولاد مبارکه اصفهان کلید فولاد
+                  مبارکه اصفهان
+                </h2>
+                <div class="course-info">
+                  <div class="teacher">
+                    <svg class="w-5 h-5">
+                      <use href="#teaching-icon"></use>
+                    </svg>
+                    <span class="text-xs">محمدرضا سلطان محمدی</span>
+                  </div>
+
+                  <div class="total-student">
+                    <span class="text-xs font-medium">54</span>
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="course-card-body-back">
+                <div class="course-back-content">
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium mb-2">تو این دوره چی می‌آموزیم؟</div>
+                    <ul class="teach-list">
+                      <li>عنوان آموختنی اول</li>
+                      <li>عنوان آموختنی دوم</li>
+                      <li>عنوان آموختنی سوم متن طولانی در دو خط خلاصه خواهد شد (متن متن متن متن متن متن متن) و سه نقطه قرار خواهد گرفت</li>
+                      <li>عنوان آموختنی چهارم</li>
+                      <li>و...</li>
+                    </ul>
+                  </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="show-course">مشاهده دوره</a>
+                    <button
+                            type="button"
+                            class="add-to-card-icon"
+                            data-course-card="false">
+                      <svg class="w-6 h-6">
+                        <use href="#add-to-cart-icon"></use>
+                      </svg>
+                    </button>
+                    <button class="save" data-like="false">
+                      <svg class="dont-like w-6 h-6">
+                        <use href="#dont-like-icon"></use>
+                      </svg>
+                      <svg class="like w-6 h-6" style="display: none">
+                        <use href="#like-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="old-price">349,000 <span class="text-xs">تومان</span></div>
+            <div class="new-price">200,000 <span class="text-sm">تومان</span></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card-body group">
+            <div class="course-card-filip group-hover:rotate-y-180">
+              <div class="course-card-body-front">
+                <div class="purchased">
+                  <svg class="w-4 h-4 text-green-light">
+                    <use href="#tik-fill-icon"></use>
+                  </svg>
+                  قبلا خریداری شده
+                </div>
+                <div class="off">8<span>%</span></div>
+                <div class="image">
+                  <img src="./assets/images/course/01.webp" alt=""/>
+                </div>
+                <div class="course-detail">
+                  <div class="flex gap-1 items-center">
+                    <span class="text-xs mt-[4px]">5.0</span>
+                    <svg class="w-4 h-4 text-amber-400">
+                      <use href="#star-fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <span>4 ساعت</span>
+                    <span> و </span>
+                    <span>30 دقیقه</span>
+                  </div>
+                </div>
+                <h2 class="title">
+                  کلید فولاد مبارکه اصفهان کلید فولاد مبارکه اصفهان کلید فولاد
+                  مبارکه اصفهان
+                </h2>
+                <div class="course-info">
+                  <div class="teacher">
+                    <svg class="w-5 h-5">
+                      <use href="#teaching-icon"></use>
+                    </svg>
+                    <span class="text-xs">محمدرضا سلطان محمدی</span>
+                  </div>
+
+                  <div class="total-student">
+                    <span class="text-xs font-medium">54</span>
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="course-card-body-back">
+                <div class="course-back-content">
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium mb-2">تو این دوره چی می‌آموزیم؟</div>
+                    <ul class="teach-list">
+                      <li>عنوان آموختنی اول</li>
+                      <li>عنوان آموختنی دوم</li>
+                      <li>عنوان آموختنی سوم متن طولانی در دو خط خلاصه خواهد شد (متن متن متن متن متن متن متن) و سه نقطه قرار خواهد گرفت</li>
+                      <li>عنوان آموختنی چهارم</li>
+                      <li>و...</li>
+                    </ul>
+                  </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="show-course">مشاهده دوره</a>
+                    <button
+                            type="button"
+                            class="add-to-card-icon"
+                            data-course-card="false">
+                      <svg class="w-6 h-6">
+                        <use href="#add-to-cart-icon"></use>
+                      </svg>
+                    </button>
+                    <button class="save" data-like="false">
+                      <svg class="dont-like w-6 h-6">
+                        <use href="#dont-like-icon"></use>
+                      </svg>
+                      <svg class="like w-6 h-6" style="display: none">
+                        <use href="#like-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="old-price">349,000 <span class="text-xs">تومان</span></div>
+            <div class="new-price">200,000 <span class="text-sm">تومان</span></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card-body group">
+            <div class="course-card-filip group-hover:rotate-y-180">
+              <div class="course-card-body-front">
+                <div class="purchased">
+                  <svg class="w-4 h-4 text-green-light">
+                    <use href="#tik-fill-icon"></use>
+                  </svg>
+                  قبلا خریداری شده
+                </div>
+                <div class="off">8<span>%</span></div>
+                <div class="image">
+                  <img src="./assets/images/course/01.webp" alt=""/>
+                </div>
+                <div class="course-detail">
+                  <div class="flex gap-1 items-center">
+                    <span class="text-xs mt-[4px]">5.0</span>
+                    <svg class="w-4 h-4 text-amber-400">
+                      <use href="#star-fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <span>4 ساعت</span>
+                    <span> و </span>
+                    <span>30 دقیقه</span>
+                  </div>
+                </div>
+                <h2 class="title">
+                  کلید فولاد مبارکه اصفهان کلید فولاد مبارکه اصفهان کلید فولاد
+                  مبارکه اصفهان
+                </h2>
+                <div class="course-info">
+                  <div class="teacher">
+                    <svg class="w-5 h-5">
+                      <use href="#teaching-icon"></use>
+                    </svg>
+                    <span class="text-xs">محمدرضا سلطان محمدی</span>
+                  </div>
+
+                  <div class="total-student">
+                    <span class="text-xs font-medium">54</span>
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="course-card-body-back">
+                <div class="course-back-content">
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium mb-2">تو این دوره چی می‌آموزیم؟</div>
+                    <ul class="teach-list">
+                      <li>عنوان آموختنی اول</li>
+                      <li>عنوان آموختنی دوم</li>
+                      <li>عنوان آموختنی سوم متن طولانی در دو خط خلاصه خواهد شد (متن متن متن متن متن متن متن) و سه نقطه قرار خواهد گرفت</li>
+                      <li>عنوان آموختنی چهارم</li>
+                      <li>و...</li>
+                    </ul>
+                  </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="show-course">مشاهده دوره</a>
+                    <button
+                            type="button"
+                            class="add-to-card-icon"
+                            data-course-card="false">
+                      <svg class="w-6 h-6">
+                        <use href="#add-to-cart-icon"></use>
+                      </svg>
+                    </button>
+                    <button class="save" data-like="false">
+                      <svg class="dont-like w-6 h-6">
+                        <use href="#dont-like-icon"></use>
+                      </svg>
+                      <svg class="like w-6 h-6" style="display: none">
+                        <use href="#like-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="old-price">349,000 <span class="text-xs">تومان</span></div>
+            <div class="new-price">200,000 <span class="text-sm">تومان</span></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card-body group">
+            <div class="course-card-filip group-hover:rotate-y-180">
+              <div class="course-card-body-front">
+                <div class="purchased">
+                  <svg class="w-4 h-4 text-green-light">
+                    <use href="#tik-fill-icon"></use>
+                  </svg>
+                  قبلا خریداری شده
+                </div>
+                <div class="off">8<span>%</span></div>
+                <div class="image">
+                  <img src="./assets/images/course/01.webp" alt=""/>
+                </div>
+                <div class="course-detail">
+                  <div class="flex gap-1 items-center">
+                    <span class="text-xs mt-[4px]">5.0</span>
+                    <svg class="w-4 h-4 text-amber-400">
+                      <use href="#star-fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <span>4 ساعت</span>
+                    <span> و </span>
+                    <span>30 دقیقه</span>
+                  </div>
+                </div>
+                <h2 class="title">
+                  کلید فولاد مبارکه اصفهان کلید فولاد مبارکه اصفهان کلید فولاد
+                  مبارکه اصفهان
+                </h2>
+                <div class="course-info">
+                  <div class="teacher">
+                    <svg class="w-5 h-5">
+                      <use href="#teaching-icon"></use>
+                    </svg>
+                    <span class="text-xs">محمدرضا سلطان محمدی</span>
+                  </div>
+
+                  <div class="total-student">
+                    <span class="text-xs font-medium">54</span>
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="course-card-body-back">
+                <div class="course-back-content">
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium mb-2">تو این دوره چی می‌آموزیم؟</div>
+                    <ul class="teach-list">
+                      <li>عنوان آموختنی اول</li>
+                      <li>عنوان آموختنی دوم</li>
+                      <li>عنوان آموختنی سوم متن طولانی در دو خط خلاصه خواهد شد (متن متن متن متن متن متن متن) و سه نقطه قرار خواهد گرفت</li>
+                      <li>عنوان آموختنی چهارم</li>
+                      <li>و...</li>
+                    </ul>
+                  </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="show-course">مشاهده دوره</a>
+                    <button
+                            type="button"
+                            class="add-to-card-icon"
+                            data-course-card="false">
+                      <svg class="w-6 h-6">
+                        <use href="#add-to-cart-icon"></use>
+                      </svg>
+                    </button>
+                    <button class="save" data-like="false">
+                      <svg class="dont-like w-6 h-6">
+                        <use href="#dont-like-icon"></use>
+                      </svg>
+                      <svg class="like w-6 h-6" style="display: none">
+                        <use href="#like-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="old-price">349,000 <span class="text-xs">تومان</span></div>
+            <div class="new-price">200,000 <span class="text-sm">تومان</span></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card-body group">
+            <div class="course-card-filip group-hover:rotate-y-180">
+              <div class="course-card-body-front">
+                <div class="purchased">
+                  <svg class="w-4 h-4 text-green-light">
+                    <use href="#tik-fill-icon"></use>
+                  </svg>
+                  قبلا خریداری شده
+                </div>
+                <div class="off">8<span>%</span></div>
+                <div class="image">
+                  <img src="./assets/images/course/01.webp" alt=""/>
+                </div>
+                <div class="course-detail">
+                  <div class="flex gap-1 items-center">
+                    <span class="text-xs mt-[4px]">5.0</span>
+                    <svg class="w-4 h-4 text-amber-400">
+                      <use href="#star-fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <span>4 ساعت</span>
+                    <span> و </span>
+                    <span>30 دقیقه</span>
+                  </div>
+                </div>
+                <h2 class="title">
+                  کلید فولاد مبارکه اصفهان کلید فولاد مبارکه اصفهان کلید فولاد
+                  مبارکه اصفهان
+                </h2>
+                <div class="course-info">
+                  <div class="teacher">
+                    <svg class="w-5 h-5">
+                      <use href="#teaching-icon"></use>
+                    </svg>
+                    <span class="text-xs">محمدرضا سلطان محمدی</span>
+                  </div>
+
+                  <div class="total-student">
+                    <span class="text-xs font-medium">54</span>
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="course-card-body-back">
+                <div class="course-back-content">
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium mb-2">تو این دوره چی می‌آموزیم؟</div>
+                    <ul class="teach-list">
+                      <li>عنوان آموختنی اول</li>
+                      <li>عنوان آموختنی دوم</li>
+                      <li>عنوان آموختنی سوم متن طولانی در دو خط خلاصه خواهد شد (متن متن متن متن متن متن متن) و سه نقطه قرار خواهد گرفت</li>
+                      <li>عنوان آموختنی چهارم</li>
+                      <li>و...</li>
+                    </ul>
+                  </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="show-course">مشاهده دوره</a>
+                    <button
+                            type="button"
+                            class="add-to-card-icon"
+                            data-course-card="false">
+                      <svg class="w-6 h-6">
+                        <use href="#add-to-cart-icon"></use>
+                      </svg>
+                    </button>
+                    <button class="save" data-like="false">
+                      <svg class="dont-like w-6 h-6">
+                        <use href="#dont-like-icon"></use>
+                      </svg>
+                      <svg class="like w-6 h-6" style="display: none">
+                        <use href="#like-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="old-price">349,000 <span class="text-xs">تومان</span></div>
+            <div class="new-price">200,000 <span class="text-sm">تومان</span></div>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-card-body group">
+            <div class="course-card-filip group-hover:rotate-y-180">
+              <div class="course-card-body-front">
+                <div class="purchased">
+                  <svg class="w-4 h-4 text-green-light">
+                    <use href="#tik-fill-icon"></use>
+                  </svg>
+                  قبلا خریداری شده
+                </div>
+                <div class="off">8<span>%</span></div>
+                <div class="image">
+                  <img src="./assets/images/course/01.webp" alt=""/>
+                </div>
+                <div class="course-detail">
+                  <div class="flex gap-1 items-center">
+                    <span class="text-xs mt-[4px]">5.0</span>
+                    <svg class="w-4 h-4 text-amber-400">
+                      <use href="#star-fill-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="text-xs">
+                    <span>4 ساعت</span>
+                    <span> و </span>
+                    <span>30 دقیقه</span>
+                  </div>
+                </div>
+                <h2 class="title">
+                  کلید فولاد مبارکه اصفهان کلید فولاد مبارکه اصفهان کلید فولاد
+                  مبارکه اصفهان
+                </h2>
+                <div class="course-info">
+                  <div class="teacher">
+                    <svg class="w-5 h-5">
+                      <use href="#teaching-icon"></use>
+                    </svg>
+                    <span class="text-xs">محمدرضا سلطان محمدی</span>
+                  </div>
+
+                  <div class="total-student">
+                    <span class="text-xs font-medium">54</span>
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="course-card-body-back">
+                <div class="course-back-content">
+                  <div class="space-y-2">
+                    <div class="text-sm font-medium mb-2">تو این دوره چی می‌آموزیم؟</div>
+                    <ul class="teach-list">
+                      <li>عنوان آموختنی اول</li>
+                      <li>عنوان آموختنی دوم</li>
+                      <li>عنوان آموختنی سوم متن طولانی در دو خط خلاصه خواهد شد (متن متن متن متن متن متن متن) و سه نقطه قرار خواهد گرفت</li>
+                      <li>عنوان آموختنی چهارم</li>
+                      <li>و...</li>
+                    </ul>
+                  </div>
+                  <div class="flex gap-3">
+                    <a href="#" class="show-course">مشاهده دوره</a>
+                    <button
+                            type="button"
+                            class="add-to-card-icon"
+                            data-course-card="false">
+                      <svg class="w-6 h-6">
+                        <use href="#add-to-cart-icon"></use>
+                      </svg>
+                    </button>
+                    <button class="save" data-like="false">
+                      <svg class="dont-like w-6 h-6">
+                        <use href="#dont-like-icon"></use>
+                      </svg>
+                      <svg class="like w-6 h-6" style="display: none">
+                        <use href="#like-icon"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="old-price">349,000 <span class="text-xs">تومان</span></div>
+            <div class="new-price">200,000 <span class="text-sm">تومان</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Pagination -->
+    <div class="container theme-pagination">
+      <span aria-current="page" class="page-numbers current">1</span>
+      <a class="page-numbers" href="http://localhost/2reha-theme-fixsingle/shop/page/2/">2</a>
+      <span class="page-numbers dots">…</span>
+      <a class="page-numbers" href="http://localhost/2reha-theme-fixsingle/shop/page/5/">5</a>
+      <a class="next page-numbers" href="http://localhost/2reha-theme-fixsingle/shop/page/2/"><svg class="w-5 h-5"><use href="#arrow-left-thin-icon"></use></svg></a>
+    </div>
+    <div class="container">
+      <ul class="flex items-center justify-center rounded gap-x-2">
+        <li><a href="#" class="inline-flex items-center justify-center rounded bg-slate-50 text-tertiary-400 shadow-sm h-10 w-10"><svg class="w-5 h-5"><use href="#arrow-right-thin-icon"></use></svg></a></li>
+        <li><span class="inline-flex items-center justify-center rounded h-10 w-10 bg-primary-500 shadow-sm text-white">1</span></li>
+        <li><a href="#" class="inline-flex items-center justify-center rounded bg-slate-50 hover:bg-slate-100 transition-colors text-tertiary-400 shadow-sm h-10 w-10">2</a></li>
+        <li><a href="#" class="inline-flex items-center justify-center rounded bg-slate-50 text-tertiary-400 shadow-sm h-10 w-10">3</a></li>
+        <li><a href="#" class="inline-flex items-center justify-center rounded bg-slate-50 text-tertiary-400 shadow-sm h-10 w-10"><svg class="w-5 h-5"><use href="#arrow-left-thin-icon"></use></svg></a></li>
+      </ul>
+    </div>
+    <!-- 
+      MainContent End 
+    -->
+    <!-- Footer Start -->
+    <footer class="mt-8">
+      <div class="bg-[#d5d3d3] py-8">
+        <div class="container">
+          <div
+            class="flex flex-col md:flex-row gap-y-2 md:gap-y-0 items-center gap-x-20"
+          >
+            <div>
+              <div class="flex items-center gap-x-1 mb-4">
+                <div class="w-6">
+                  <img src="./assets/images/logo/2reha-icon.webp" alt="" />
+                </div>
+                <div class="text-xl font-semibold">درباره دوره‌ها</div>
+              </div>
+              <p class="text-tertiary-500 text-sm font-medium">
+                دوره ها، پلتفرم دوره های آموزشی برای فارسی زبان هاست. اینجا می
+                تونید دوره شرکت کنید و آموزش ببینید یا دوره ایجاد کنید و به کسب
+                درآمد برسید. ما کلیه ابزار لازم برای شرکت یا برگزاری دوره های
+                آنلاین و ویدئویی رو در اختیار شما قرار میدهیم. اینجا می تونید
+                انواع دوره رو در کلیه زمینه ها، پیدا یا برگزار کنید.
+              </p>
+            </div>
+            <div class="flex items-center gap-x-4">
+              <div
+                class="w-20 h-20 bg-white rounded-2xl overflow-hidden shadow-md"
+              >
+                <img src="./assets/images/li-enamad.webp" alt="" />
+              </div>
+              <div
+                class="w-20 h-20 bg-white rounded-2xl overflow-hidden shadow-md"
+              >
+                <img src="./assets/images/sadad.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="container">
+          <div
+            class="flex flex-col gap-y-2 lg:gap-y-0 lg:flex-row items-center justify-between gap-x-4"
+          >
+            <div class="text-sm font-semibold text-tertiary-600">
+              از آخرین مطالب و تخفیف‌های دوره ها همیشه با خبر باشید!
+            </div>
+            <div>
+              <form
+                action=""
+                class="subscription-form flex flex-col md:flex-row md:gap-x-2 md:gap-y-0 gap-y-2"
+              >
+                <input type="tel" placeholder="شماره موبایل" />
+                <input type="email" placeholder="آدرس ایمیل" />
+                <input type="submit" value="عضویت" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="container">
+          <div
+            class="grid grid-cols-1 xs:grid-cols-2 gap-4 md:flex md:justify-around"
+          >
+            <div class="text-center">
+              <div class="font-bold text-tertiary-600 mb-2">دسترسی سریع</div>
+              <ul class="space-y-1 text-tertiary-400">
+                <li>
+                  <a
+                    href="#"
+                    class="text-tertiary-400 hover:text-primary-600 transition-colors"
+                    >پنل کاربری</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-tertiary-400 hover:text-primary-600 transition-colors"
+                    >دوره‌های من</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="text-center">
+              <div class="font-bold text-tertiary-600 mb-2">راهنما</div>
+              <ul class="space-y-1 text-tertiary-400">
+                <li>
+                  <a
+                    href="#"
+                    class="text-tertiary-400 hover:text-primary-600 transition-colors"
+                    >شرکت کنندگان</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-tertiary-400 hover:text-primary-600 transition-colors"
+                    >ارائه دهندگان</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="text-center">
+              <div class="font-bold text-tertiary-600 mb-2">کسب درآمد</div>
+              <ul class="space-y-1">
+                <li>
+                  <a href="#" class="text-tertiary-400 hover:text-primary-600 transition-colors">تدریس در دوره‌ها</a>
+                </li>
+                <li>
+                  <a href="#" class="text-tertiary-400 hover:text-primary-600 transition-colors">همکاری در فروش</a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-center">
+              <div class="font-bold text-tertiary-600 mb-2">
+                راه‌های ارتباطی
+              </div>
+              <ul class="space-y-1 text-tertiary-400">
+                <li>
+                  <a href="#" class="text-tertiary-400 hover:text-primary-600 transition-colors" class="text-tertiary-400 hover:text-primary-600 transition-colors">تماس: <span class="tracking-tighter"> 340 303 91 - 021</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#564d44]">
+        <div
+          class="container text-center py-2 text-xs lg:text-sm text-tertiary-200"
+        >
+          طراحی شده با ❤️ در ایران عزیز - کلیه‌ی حقوق نزد آکادمی آنلاین دوره ها
+          محفوظ است و هر گونه کپی‌برداری از مطالب، پیگرد قانونی دارد.
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <div
+      id="overlay"
+      class="bg-black/20 fixed top-0 right-0 left-0 bottom-0 z-30  transition-all scale-0  hidden"
+    ></div>
+  </body>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/sweetalert2@11.js"></script>
+  <script src="./assets/js/chart.js"></script>
+  <script src="./assets/js/main.js"></script>
+</html>
