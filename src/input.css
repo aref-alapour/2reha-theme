@@ -82,14 +82,96 @@
   .desktop-menu > ul {
     @apply flex items-center gap-x-4 xl:gap-x-8 py-4 md:text-xs lg:text-sm xl:text-base;
   }
-  .desktop-menu > ul li > a {
+  .desktop-menu > ul.menu > li.menu-item > a {
     @apply text-tertiary-600 flex gap-x-1 items-center menu-btn;
   }
-  .mobile-menu > ul {
+  .desktop-menu > ul.menu li.menu-item.menu-item-has-children {
+    @apply  relative;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children::after {
+    content: '◀';
+    position: absolute;
+    right: 100%;
+    top: 55%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 12px;
+    color: #c5c5c5;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children:hover > ul.sub-menu {
+    @apply opacity-100 visible;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children > ul.sub-menu {
+  @apply opacity-0 invisible transition-all absolute bg-slate-100 space-y-1.5 rounded-lg shadow w-max right-0;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children > ul.sub-menu > li.menu-item.menu-item-has-children::after {
+    content: '◀';
+    position: absolute;
+    left: 5px;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #c5c5c5;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children:last-child > ul.sub-menu > li.menu-item.menu-item-has-children::after {
+    right: 5px;
+    left: unset;
+    top: 45%;
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children:last-child > ul.sub-menu {
+    @apply left-0;
+    right: unset;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children > ul.sub-menu > li.menu-item.menu-item-has-children:hover > ul.sub-menu {
+    @apply opacity-100 visible;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children > ul.sub-menu > li.menu-item.menu-item-has-children > ul.sub-menu {
+    @apply opacity-0 invisible transition-all absolute bg-slate-100 space-y-1.5 rounded-lg shadow w-max top-0 right-full;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children:last-child > ul.sub-menu > li.menu-item.menu-item-has-children > ul.sub-menu {
+    @apply left-full;
+    right: unset;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children > ul.sub-menu li.menu-item > a {
+    @apply block px-6 py-2 hover:bg-slate-200 transition-colors;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children > ul.sub-menu li.menu-item:first-child > a {
+    @apply rounded-t-lg;
+  }
+  .desktop-menu > ul.menu > li.menu-item.menu-item-has-children > ul.sub-menu li.menu-item:last-child > a {
+    @apply rounded-b-lg;
+  }
+  .mobile-menu > ul.menu {
     @apply flex flex-col items-start gap-y-4 mt-6;
   }
   .mobile-menu > ul li a {
-    @apply text-tertiary-600 flex gap-x-1 items-center menu-btn;
+    @apply text-tertiary-600;
+  }
+  .mobile-menu > ul.menu li.menu-item {
+    @apply w-full relative;
+  }
+  .mobile-menu > ul.menu li.menu-item.menu-item-has-children:after{
+    content: '+';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    font-size: 20px;
+    color: #c5c5c5;
+  }
+  .mobile-menu > ul.menu li.menu-item.active.menu-item-has-children:after {
+    content: '-';
+  }
+  .mobile-menu > ul.menu li.menu-item.menu-item-has-children > a {
+    @apply w-full block;
+  }
+  .mobile-menu > ul.menu li.menu-item.menu-item-has-children ul.sub-menu {
+    @apply mt-2 mr-2 pr-1 border-r-2 border-primary-200 space-y-3 h-0 overflow-hidden hidden;
+  }
+  .mobile-menu > ul.menu li.menu-item.menu-item-has-children.active > ul.sub-menu {
+    @apply block h-full;
+  }
+  .mobile-menu > ul.menu li.menu-item.menu-item-has-children.active > ul.sub-menu li.menu-item.menu-item-has-children ul.sub-menu {
+    @apply border-secondary-200 space-y-2;
   }
   .footer-menu > ul {
     @apply space-y-1 text-tertiary-400;

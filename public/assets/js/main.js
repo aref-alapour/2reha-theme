@@ -3,8 +3,14 @@ const overlay = document.querySelector("#overlay"),
     MobileMenuSection = document.querySelector("#MobileMenuSection"),
     MenuCloseIcon = document.querySelector("#MenuCloseIcon"),
     tabsTitle = document.querySelectorAll(".tabs-title"),
-    contentTab = document.querySelectorAll(".tab-content");
+    contentTab = document.querySelectorAll(".tab-content"),
+    menuMobileChild = document.querySelectorAll('.mobile-menu > ul.menu li.menu-item.menu-item-has-children > a');
 
+menuMobileChild.forEach((element) => {
+    element.addEventListener("click", function () {
+        this.parentElement.classList.toggle('active');
+    });
+});
 let overlayFunc = function ($type) {
     if ($type) {
         overlay.classList.remove("hidden");
