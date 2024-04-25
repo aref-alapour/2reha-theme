@@ -974,3 +974,22 @@ a.added_to_cart.wc-forward {
 .woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card h2.title {
   @apply px-2 text-justify text-sm font-medium line-clamp-2 mt-2 text-zinc-600 hover:text-primary-700 transition-colors;
 }
+form#gform_2 > .gform-body > #gform_fields_2 {
+  @apply subscription-form flex flex-col md:flex-row md:gap-x-2 md:gap-y-0 gap-y-2;
+}
+form#gform_2 > .gform-body > #gform_fields_2 input[type=email]:focus,form#gform_2 > .gform-body > #gform_fields_2 input[type=tel]:focus {
+  outline: unset !important;
+  border-color: #FFDACC;
+}
+.gform-body > #gform_fields_2 input[type=tel] {
+  @apply w-full;
+}
+.gform-body > #gform_fields_2 input[type=submit] {
+  @apply w-full;
+}
+form#gform_2 label {
+  @apply hidden;
+}
+form#gform_2 {
+  @apply flex;
+}
