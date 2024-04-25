@@ -634,3 +634,27 @@ searchTab.forEach(element => {
         searchContentSection.style.display = 'block';
     })
 });
+
+// acc tab favorite
+const favoriteBtnAcc = document.querySelectorAll('.favorite-btn-acc'),
+    favoriteContent = document.querySelectorAll('.favorite-content');
+let favoriteBtnAccActive = function () {
+    favoriteBtnAcc.forEach(element => {
+        element.classList.remove('active');
+    });
+}
+let favoriteContentActive = function () {
+    favoriteContent.forEach(element => {
+        element.style.display = 'none';
+    });
+}
+favoriteBtnAcc.forEach(element => {
+    element.addEventListener('click', function (){
+        let favoriteBtnAtt = this.getAttribute('data-content');
+        let favoriteContentActivation = document.getElementById(favoriteBtnAtt);
+        favoriteBtnAccActive();
+        favoriteContentActive();
+        this.classList.add('active');
+        favoriteContentActivation.style.display = 'block';
+    })
+});
