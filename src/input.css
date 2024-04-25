@@ -359,6 +359,9 @@
   .course-card .course-card-body .course-card-filip .course-card-body-front .course-info .total-student {
     @apply flex items-center gap-1 text-zinc-500;
   }
+  .blog-save {
+    @apply absolute top-2 left-2 bg-slate-50 w-8 h-8 flex justify-center items-center text-red-500 rounded-full;
+  }
   .header-section a span:nth-child(1) {
     @apply left-0 top-0 w-[50.0%] h-[2px] duration-500 scale-x-0 origin-left;
     transition: transform 0.5s;

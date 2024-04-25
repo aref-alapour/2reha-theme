@@ -100,6 +100,64 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+// SaveBlog
+const saveBlog = document.querySelectorAll(".blog-save");
+saveBlog.forEach((element) => {
+    element.addEventListener("click", function () {
+        let dataLikeAtt = this.getAttribute("data-like");
+        let dontLikeIcon = this.children[0];
+        let LikeIcon = this.children[1];
+        let likeType = function ($type) {
+            if ($type) {
+                dontLikeIcon.style.display = "none";
+                LikeIcon.style.display = "block";
+            }
+            if (!$type) {
+                dontLikeIcon.style.display = "block";
+                LikeIcon.style.display = "none";
+            }
+        };
+        switch (dataLikeAtt) {
+            case "false":
+                Swal.fire({
+                    position: "bottom-start",
+                    icon: "success",
+                    title: "دوره به لیست علاقه‌مندی‌ها افزوده شد",
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
+                likeType("like");
+                this.setAttribute("data-like", "true");
+                break;
+            case "true":
+                Swal.fire({
+                    position: "bottom-start",
+                    icon: "success",
+                    title: "دوره از لیست علاقه‌مندی‌ها حذف شد",
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
+                likeType();
+                this.setAttribute("data-like", "false");
+                break;
+            case "no-login":
+                Swal.fire({
+                    text: "برای افزودن دوره به لیست علاقه‌مندی‌ها وارد حساب کاربری شوید.",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#003637",
+                    cancelButtonColor: "#d33",
+                    cancelButtonText: "لغو",
+                    confirmButtonText: "ورود | ثبت نام",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        console.log("login");
+                    }
+                });
+                break;
+        }
+    });
+});
 
 // SaveCourse
 const saveCourse = document.querySelectorAll(".save");

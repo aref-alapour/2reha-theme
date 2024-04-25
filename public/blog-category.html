@@ -838,10 +838,21 @@
     وبلاگ</div>
   <!-- PageContent -->
   <div class="container grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
-    <div class="rounded-md overflow-hidden shadow bg-white">
-      <div class="w-full h-50 overflow-hidden"><a href="#"><img src="./assets/images/blog/01.webp"
+    <div class="rounded-md overflow-hidden shadow bg-white relative">
+      <div class="w-full h-50 overflow-hidden">
+        <a href="#">
+        <img src="./assets/images/blog/01.webp"
                alt=""
-               class="w-full h-full object-cover transition-all duration-500 hover:scale-110 hover:saturate-150"></a>
+               class="w-full h-full object-cover transition-all duration-500 hover:scale-110 hover:saturate-150">
+        </a>
+        <button class="blog-save" data-like="false" title="علاقه‌مندی" data-type="blog-wish" data-post="" data-user="">
+          <svg class="dont-like w-6 h-6" style="">
+            <use href="#dont-like-icon"></use>
+          </svg>
+          <svg class="like w-6 h-6" style="display: none;">
+            <use href="#like-icon"></use>
+          </svg>
+        </button>
       </div>
       <div class="px-4 my-2"><a href="#"
            class="text-sm font-semibold line-clamp-2 text-tertiary-700 hover:text-primary-600 transition-colors">یادگیری
