@@ -815,6 +815,10 @@
     border-radius: 20px;
     margin: 10px auto;
   }
+  .page-404-title {
+    font-size: 100px;
+    font-weight: 600;
+  }
 }
 .woocommerce-Price-currencySymbol {
   font-size: small;
