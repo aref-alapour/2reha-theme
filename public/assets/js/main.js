@@ -658,3 +658,4 @@ favoriteBtnAcc.forEach(element => {
         favoriteContentActivation.style.display = 'block';
     })
 });
+
