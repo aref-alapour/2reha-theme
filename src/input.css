@@ -798,7 +798,7 @@
   .theme-pagination span.page-numbers.current {
     @apply inline-flex items-center justify-center rounded h-10 w-10 bg-primary-500 shadow-sm text-white;
   }
-  .add-to-card {
+  .add-to-card, .course-page-btn {
     @apply w-full block bg-green-light hover:bg-green-dark py-2 text-center text-lg font-semibold rounded-lg text-white transition-colors;
   }
   .search-tab {
@@ -890,6 +890,61 @@
   #mobile-otp-page::-webkit-inner-spin-button,#mobile-otp-page::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+  div.desktop-list-item-container{
+    @apply min-w-[200px] w-max max-w-[300px] bg-slate-50 shadow rounded-lg p-3 hidden md:block;
+  }
+  div.mobile-list-item-container {
+    @apply w-max max-w-[300px] fixed bg-white shadow px-3 py-2.5 top-10 bottom-10 z-40 rounded-lg transition-transform duration-500;
+  }
+
+  div.list-box-header{
+    @apply mb-4;
+  }
+  div.list-box-header.active > h3.list-box-title {
+  @apply text-zinc-800;
+  }
+  div.list-box-header.active > h3.list-box-title:before{
+    background-color: #FF4500;
+  }
+  div.list-box-header.active > h3.list-box-title:after{
+    background-color: #FF4500;
+  }
+  h3.list-box-title {
+    @apply w-fit mx-auto font-medium relative text-zinc-500;
+  }
+
+  button.list-box-item {
+    @apply flex items-center gap-x-1.5 text-zinc-500;
+  }
+  button.list-box-item .list-box-item-title {
+    @apply line-clamp-1 text-right;
+  }
+  button.list-box-item.active{
+    @apply text-zinc-800 pb-0.5 border-b border-b-primary-500;
+  }
+  h3.list-box-title:before{
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #FFDACC;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(10deg);
+  }
+  h3.list-box-title:after{
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #FFDACC;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(10deg);
+  }
+  div#respond.product-question-form {
+  @apply overflow-y-hidden !mt-0 !mb-0;
   }
 }
 .woocommerce-Price-currencySymbol {

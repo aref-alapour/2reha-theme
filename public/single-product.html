@@ -766,6 +766,12 @@
                class="add-to-card">
               شرکت در دوره
             </a>
+            <form action="<?php bloginfo('url'); echo '/view-course'; ?>" method="post">
+              <input name="submit" type="submit" class="course-page-btn cursor-pointer" value="مشاهده جلسات دوره">
+              <input type="hidden" name="post-id" value="18136" id="post-id">
+              <input type="hidden" name="user-id" id="user-id" value="0">
+              <input type="hidden" name="lecturer-id" id="lecturer-id" value="0">
+            </form>
           </div>
           <div class="bg-white rounded-lg shadow p-4 mt-4 sm:mt-0 lg:mt-4">
             <div class="flex items-center justify-between">
