@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
-<body>
+<body id="body-tag">
   <!-- All Icon Start -->
   <svg class="hidden">
     <symbol
@@ -302,6 +302,14 @@
       <path
             d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
     </symbol>
+    <symbol id="product-question-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M4,2A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H8V21A1,1 0 0,0 9,22H9.5V22C9.75,22 10,21.9 10.2,21.71L13.9,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2H4M4,4H20V16H13.08L10,19.08V16H4V4M12.19,5.5C11.3,5.5 10.59,5.68 10.05,6.04C9.5,6.4 9.22,7 9.27,7.69C0.21,7.69 6.57,7.69 11.24,7.69C11.24,7.41 11.34,7.2 11.5,7.06C11.7,6.92 11.92,6.85 12.19,6.85C12.5,6.85 12.77,6.93 12.95,7.11C13.13,7.28 13.22,7.5 13.22,7.8C13.22,8.08 13.14,8.33 13,8.54C12.83,8.76 12.62,8.94 12.36,9.08C11.84,9.4 11.5,9.68 11.29,9.92C11.1,10.16 11,10.5 11,11H13C13,10.72 13.05,10.5 13.14,10.32C13.23,10.15 13.4,10 13.66,9.85C14.12,9.64 14.5,9.36 14.79,9C15.08,8.63 15.23,8.24 15.23,7.8C15.23,7.1 14.96,6.54 14.42,6.12C13.88,5.71 13.13,5.5 12.19,5.5M11,12V14H13V12H11Z" /></symbol>
+    <symbol id="education-fill-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" /></symbol>
+    <symbol id="license-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 10A3.04 3.04 0 0 1 12 7A3.04 3.04 0 0 1 15 10A3.04 3.04 0 0 1 12 13A3.04 3.04 0 0 1 9 10M12 19L16 20V16.92A7.54 7.54 0 0 1 12 18A7.54 7.54 0 0 1 8 16.92V20M12 4A5.78 5.78 0 0 0 7.76 5.74A5.78 5.78 0 0 0 6 10A5.78 5.78 0 0 0 7.76 14.23A5.78 5.78 0 0 0 12 16A5.78 5.78 0 0 0 16.24 14.23A5.78 5.78 0 0 0 18 10A5.78 5.78 0 0 0 16.24 5.74A5.78 5.78 0 0 0 12 4M20 10A8.04 8.04 0 0 1 19.43 12.8A7.84 7.84 0 0 1 18 15.28V23L12 21L6 23V15.28A7.9 7.9 0 0 1 4 10A7.68 7.68 0 0 1 6.33 4.36A7.73 7.73 0 0 1 12 2A7.73 7.73 0 0 1 17.67 4.36A7.68 7.68 0 0 1 20 10Z" /></symbol>
+    <symbol id="guarantee-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12L20.6 9.2L20.9 5.5L17.3 4.7L15.4 1.5L12 3L8.6 1.5L6.7 4.7L3.1 5.5L3.4 9.2L1 12L3.4 14.8L3.1 18.5L6.7 19.3L8.6 22.5L12 21L15.4 22.5L17.3 19.3L20.9 18.5L20.6 14.8L23 12M18.7 16.9L16 17.5L14.6 19.9L12 18.8L9.4 19.9L8 17.5L5.3 16.9L5.5 14.1L3.7 12L5.5 9.9L5.3 7.1L8 6.5L9.4 4.1L12 5.2L14.6 4.1L16 6.5L18.7 7.1L18.5 9.9L20.3 12L18.5 14.1L18.7 16.9M16.6 7.6L18 9L10 17L6 13L7.4 11.6L10 14.2L16.6 7.6Z" /></symbol>
+    <symbol id="check-default-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></symbol>
+    <symbol id="check-circle-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"/></symbol>
+    <symbol id="pos-tutorial-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M21,3H3A2,2 0 0,0 1,5V8H3V5H21V19H14V21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3M1,18V21H4A3,3 0 0,0 1,18M1,14V16A5,5 0 0,1 6,21H8A7,7 0 0,0 1,14M1,10V12A9,9 0 0,1 10,21H12C12,14.92 7.07,10 1,10M11,11.09V13.09L14.5,15L18,13.09V11.09L14.5,13L11,11.09M14.5,6L9,9L14.5,12L20,9L14.5,6Z" /></symbol>
+    <symbol id="scrollup-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M17,14L12,9L7,14H17Z" /></symbol>
   </svg>
   <!-- All Icon End -->
   <!-- Header Start -->
@@ -700,117 +708,251 @@
   <!-- product title end -->
   <!-- product content start -->
   <section class="container">
-    <div class="my-8 flex flex-col gap-y-8 lg:gap-y-8 lg:flex-row lg:gap-x-4">
-      <div class="md:min-w-80 lg:max-w-80">
+    <div class="my-8 flex gap-x-4">
+      <div class="hidden md:block">
         <div
-             class="lg:sticky lg:top-40 flex flex-col sm:flex-row gap-x-4 items-start lg:block">
+             class="sticky top-40 flex flex-col items-start w-60 lg:w-72 space-y-3">
           <div
-               class="bg-white p-4 shadow rounded-lg relative w-full sm:w-11/12 md:w-5/6 lg:w-auto">
-            <span
-                  class="product-single-card absolute top-4 -right-2 inline-block bg-primary-500 px-4 py-2 rounded-tl-2xl rounded-bl-2xl text-white">دوره
-              ویدئویی</span>
-            <div class="mt-16 space-y-4 pb-4">
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#course-time-icon"></use>
-                  </svg>
-                  <span class="text-sm">مدت دوره:</span>
-                </div>
-                <div class="text-base">30 ساعت</div>
-              </div>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#course-video-icon"></use>
-                  </svg>
-                  <span class="text-sm">تعداد ویدئو:</span>
-                </div>
-                <div class="text-base">65 عدد</div>
-              </div>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#course-level-icon"></use>
-                  </svg>
-                  <span class="text-sm">سطح دوره:</span>
-                </div>
-                <div class="text-base">جامع</div>
-              </div>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#support-icon"></use>
-                  </svg>
-                  <span class="text-sm">پشتیبانی:</span>
-                </div>
-                <div class="text-base">از طریق سایت</div>
-              </div>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#course-update-icon"></use>
-                  </svg>
-                  <span class="text-sm">به روزرسانی:</span>
-                </div>
-                <div class="text-base">بهمن 1402</div>
+               class="bg-slate-50 p-4 shadow rounded-lg w-full">
+            <div class="single-price flex gap-x-1 justify-center items-baseline mt-4 mb-2" >
+              <div class="price">
+                <del aria-hidden="true">
+                  <span class="woocommerce-Price-amount amount">
+                    <bdi>380,000&nbsp;<span class="woocommerce-Price-currencySymbol">تومان</span></bdi>
+                  </span>
+                </del>
+                <ins>
+                  <span class="woocommerce-Price-amount amount">
+                    <bdi>370,000&nbsp;<span class="woocommerce-Price-currencySymbol">تومان</span></bdi>
+                  </span>
+                </ins>
               </div>
             </div>
-            <span class="block border-b-2 border-dashed"></span>
-            <div class="flex gap-x-1 justify-center items-baseline mt-4 mb-2">
-              <span class="text-xl font-bold text-primary-600">596,000</span><span
-                    class="text-sm font-medium text-tertiary-500">تومان</span>
+            <div class="single-price flex gap-x-1 justify-center items-baseline mt-4 mb-2" style="display: none">
+              <div class="price">
+                <span class="woocommerce-Price-amount amount">
+                  <bdi>260,000&nbsp;<span class="woocommerce-Price-currencySymbol">تومان</span></bdi>
+                </span>
+              </div>
             </div>
             <a
                href="#"
                class="add-to-card">
               شرکت در دوره
             </a>
-            <form action="<?php bloginfo('url'); echo '/view-course'; ?>" method="post">
-              <input name="submit" type="submit" class="course-page-btn cursor-pointer" value="مشاهده جلسات دوره">
-              <input type="hidden" name="post-id" value="18136" id="post-id">
-              <input type="hidden" name="user-id" id="user-id" value="0">
-              <input type="hidden" name="lecturer-id" id="lecturer-id" value="0">
-            </form>
           </div>
-          <div class="bg-white rounded-lg shadow p-4 mt-4 sm:mt-0 lg:mt-4">
-            <div class="flex items-center justify-between">
-              <div
-                   class="flex flex-col gap-y-1 border-r-4 pr-1 rounded border-red-400">
-                <span class="text-sm font-medium text-tertiary-500">ارائه دهنده</span>
-                <a
-                   href="#"
-                   class="font-semibold text-tertiary-600 hover:text-tertiary-800 transition-colors">وهاب
-                  راستار</a>
-              </div>
-              <div class="w-fit">
-                <img
-                     src="./assets/images/teachers/01.webp"
-                     alt=""
-                     class="w-20" /><a
-                   href="#"
-                   class="text-xs font-semibold text-primary-700 hover:text-primary-900 transition-colors">مشاهده
-                  پروفایل</a>
-              </div>
-            </div>
-            <span class="block border-b-2 my-2 border-dashed"></span>
-            <p class="text-xs text-justify font-medium text-tertiary-400">
-              کارشناس ارشد مهندسی مواد مهندس بین المللی جوش (IWE) کارشناس
-              مهندسی جوش و مواد در شرکت توربین مپنا (TUGA)
-            </p>
+          <div class="bg-slate-50 p-4 shadow rounded-lg w-full">
+            <ul class="space-y-3 text-center">
+              <li><a href="#intro-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">معرفی دوره</a></li>
+              <li><a href="#detail-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">محتویات دوره</a></li>
+              <li><a href="#content-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">توضیحات تکمیلی</a></li>
+              <li><a href="#pos-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">دوره‌های پیش‌نیاز/مکمل</a></li>
+              <li><a href="#free-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">نمونه تدریس</a></li>
+              <li><a href="#faq-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">سوالات متداول</a></li>
+              <li><a href="#comment-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">نظرات</a></li>
+              <li><a href="#related-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">دوره‌های مرتبط</a></li>
+            </ul>
           </div>
         </div>
       </div>
       <div>
         <!-- curse intro -->
-        <div
-             class="rounded-2xl overflow-hidden shadow-md child:h-full child:w-full child:aspect-video child:object-cover">
-          <iframe src="https://player.arvancloud.ir/index.html?config=https://ez.arvanvod.ir/VLK8LB5xqb/82EQA0KnVJ/origin_config.json&amp;skin=shaka" style="border:0 #ffffff none;" name="1 - MT.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" __idm_id__="6635521">
+        <div class="mb-8 scroll-mt-30 md:scroll-mt-40" id="intro-course">
+          <div
+                  class="rounded-2xl overflow-hidden shadow-md child:h-full child:w-full child:aspect-video child:object-cover">
+            <iframe src="https://player.arvancloud.ir/index.html?config=https://ez.arvanvod.ir/VLK8LB5xqb/82EQA0KnVJ/origin_config.json&amp;skin=shaka" style="border:0 #ffffff none;" name="1 - MT.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" __idm_id__="6635521">
 
-          </iframe>
+            </iframe>
+          </div>
+          <div class="md:hidden">
+            <div
+                    class="bg-slate-50 p-4 shadow rounded-lg w-full">
+              <div class="single-price flex gap-x-1 justify-center items-baseline mt-4 mb-2" >
+                <div class="price">
+                  <del aria-hidden="true">
+                  <span class="woocommerce-Price-amount amount">
+                    <bdi>380,000&nbsp;<span class="woocommerce-Price-currencySymbol">تومان</span></bdi>
+                  </span>
+                  </del>
+                  <ins>
+                  <span class="woocommerce-Price-amount amount">
+                    <bdi>370,000&nbsp;<span class="woocommerce-Price-currencySymbol">تومان</span></bdi>
+                  </span>
+                  </ins>
+                </div>
+              </div>
+              <div class="single-price flex gap-x-1 justify-center items-baseline mt-4 mb-2" style="display: none">
+                <div class="price">
+                <span class="woocommerce-Price-amount amount">
+                  <bdi>260,000&nbsp;<span class="woocommerce-Price-currencySymbol">تومان</span></bdi>
+                </span>
+                </div>
+              </div>
+              <a
+                      href="#"
+                      class="add-to-card">
+                شرکت در دوره
+              </a>
+            </div>
+            <div class="bg-slate-50 p-4 shadow rounded-lg w-full">
+              <ul class="space-y-3 text-center">
+                <li><a href="#intro-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">معرفی دوره</a></li>
+                <li><a href="#detail-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">محتویات دوره</a></li>
+                <li><a href="#content-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">توضیحات تکمیلی</a></li>
+                <li><a href="#pos-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">دوره‌های پیش‌نیاز/مکمل</a></li>
+                <li><a href="#free-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">نمونه تدریس</a></li>
+                <li><a href="#faq-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">سوالات متداول</a></li>
+                <li><a href="#comment-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">نظرات</a></li>
+                <li><a href="#related-course" class="hover:bg-primary-200 transition-colors block py-1 rounded-lg">دوره‌های مرتبط</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 bg-primary-100/20 p-4 rounded-xl shadow">
+            <h2 class="text-lg font-semibold mb-4">اطلاعات دوره</h2>
+            <div class="flex flex-col gap-y-6 xl:flex-row xl:items-center xl:gap-x-8">
+              <div class="w-full xl:w-4/6 space-y-2 grid grid-cols-1 xs:grid-cols-2 gap-x-6">
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-5 h-5">
+                      <use href="#education-fill-icon"></use>
+                    </svg>
+                    <span class="text-sm">نوع دوره:</span>
+                  </div>
+                  <div class="text-base">ویدیویی</div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-5 h-5">
+                      <use href="#course-time-icon"></use>
+                    </svg>
+                    <span class="text-sm">مدت دوره:</span>
+                  </div>
+                  <div class="text-base">30 ساعت</div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-5 h-5">
+                      <use href="#course-video-icon"></use>
+                    </svg>
+                    <span class="text-sm">تعداد ویدئو:</span>
+                  </div>
+                  <div class="text-base">65 عدد</div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-5 h-5">
+                      <use href="#course-level-icon"></use>
+                    </svg>
+                    <span class="text-sm">سطح دوره:</span>
+                  </div>
+                  <div class="text-base">جامع</div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-5 h-5">
+                      <use href="#product-question-icon"></use>
+                    </svg>
+                    <span class="text-sm">ارتباط با مدرس:</span>
+                  </div>
+                  <div class="text-base">دارد</div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-5 h-5">
+                      <use href="#license-icon"></use>
+                    </svg>
+                    <span class="text-sm">نوع مدرک:</span>
+                  </div>
+                  <div class="text-base">مدرک معتبر</div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-5 h-5">
+                      <use href="#guarantee-icon"></use>
+                    </svg>
+                    <span class="text-sm">تضمین کیفیت:</span>
+                  </div>
+                  <div class="text-base">100%</div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-5 h-5">
+                      <use href="#course-update-icon"></use>
+                    </svg>
+                    <span class="text-sm">به روزرسانی:</span>
+                  </div>
+                  <div class="text-base">بهمن 1402</div>
+                </div>
+              </div>
+              <div class="w-full xl:w-2/6">
+                <div class="flex items-center justify-between">
+                  <div
+                          class="flex flex-col gap-y-1 border-r-4 pr-1 rounded border-red-400">
+                    <span class="text-sm font-medium text-tertiary-500">ارائه دهنده</span>
+                    <a
+                            href="#"
+                            class="font-semibold text-tertiary-600 hover:text-tertiary-800 transition-colors">وهاب
+                      راستار</a>
+                  </div>
+                  <div class="w-fit">
+                    <img
+                            src="./assets/images/teachers/01.webp"
+                            alt=""
+                            class="w-20 rounded-full" /><a
+                          href="#"
+                          class="text-xs font-semibold text-primary-700 hover:text-primary-900 transition-colors">مشاهده
+                    پروفایل</a>
+                  </div>
+                </div>
+                <span class="block border-b-2 my-2 border-dashed"></span>
+                <p class="text-xs text-justify font-medium text-tertiary-400">
+                  کارشناس ارشد مهندسی مواد مهندس بین المللی جوش (IWE) کارشناس
+                  مهندسی جوش و مواد در شرکت توربین مپنا (TUGA)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="my-8 py-4 border-t-2 border-b-2 border-dashed">
+            <h2 class="text-lg text-primary-500 font-semibold mb-4">مقدمه:</h2>
+            <p class="text-justify">
+              دوره بازرسی جوش MT، با تکیه بر سرفصل های استاندارد ANSI/ASNT SNT-TC-1A با نگاهی جامع به آموزش تست غیرمخرب ذرات مغناطیسی (MT) پرداخته است. شما می توانید پس از مشاهده دوره، در آزمون شرکت کرده و پس از کسب نمره قبولی مدرک معتبر بین‌المللی بازرسی جوش بر اساس  ASNT SNT-TC-1A Level I&II با مهر و امضاء کارشناس ASNT MT Level III انجمن تست‌های غیرمخرب آمریکا دریافت کنید.
+            </p>
+          </div>
+        </div>
+        <!-- course detail -->
+        <div class="my-8 scroll-mt-30 md:scroll-mt-40 bg-secondary-100/20 p-4 rounded-xl shadow" id="detail-course">
+          <div class="flex items-center text-xl gap-x-1 font-semibold mb-6">
+            <div class="image w-8">
+              <img src="./assets/images/logo/2reha-icon.webp" alt="" />
+            </div>
+            در این دوره چه می‌آموزیم؟
+          </div>
+          <ul class="space-y-3 mr-2">
+            <li class="flex gap-x-1">
+              <span class="text-green-light"><svg class="w-5 h-5"><use href="#check-circle-icon"></use></svg></span>
+              <span class="font-medium">آشنایی با اصول و قواعد حاکم بر تست ذرات مغناطیسی</span>
+            </li>
+            <li class="flex gap-x-1">
+              <span class="text-green-light"><svg class="w-5 h-5"><use href="#check-circle-icon"></use></svg></span>
+              <span class="font-medium">کاربردهای تست ذرات مغناطیسی</span>
+            </li>
+            <li class="flex gap-x-1">
+              <span class="text-green-light"><svg class="w-5 h-5"><use href="#check-circle-icon"></use></svg></span>
+              <span class="font-medium">کارگاه عملی و آموزش مهارت انجام تست ذرات مغناطیسی</span>
+            </li>
+            <li class="flex gap-x-1">
+              <span class="text-green-light"><svg class="w-5 h-5"><use href="#check-circle-icon"></use></svg></span>
+              <span class="font-medium">مزایا و محدودیت‌های تست ذرات مغناطیسی</span>
+            </li>
+            <li class="flex gap-x-1">
+              <span class="text-green-light"><svg class="w-5 h-5"><use href="#check-circle-icon"></use></svg></span>
+              <span class="font-medium">حد پذیرش تست ذرات مغناطیسی بر اساس استانداردهای مختلف</span>
+            </li>
+          </ul>
         </div>
         <!-- course content -->
-        <section class="single-product-course-content">
+        <section class="single-product-course-content scroll-mt-30 md:scroll-mt-40" id="content-course">
+          <h2 class="text-primary-500 mb-4">توضیحات تکمیلی:</h2>
           <p style="text-align: justify;"><span style="color: #000000;">دوره بازرسی جوش MT، با تکیه بر سرفصل های استاندارد <span style="color: #0000ff;"><a class="" href="https://www.asnt.org/MajorSiteSections/Standards/ASNT_Standards/SNT-TC-1A.aspx" target="_blank" rel="noopener"><strong>ANSI/ASNT SNT-TC-1A</strong></a></span> با نگاهی جامع به آموزش تست غیرمخرب ذرات مغناطیسی (MT) پرداخته است.</span></p>
           <p>&nbsp;</p>
           <p><span style="color: #0000ff;"><strong class="">با ثبت‌نام در این دوره می‌توانید سرفصل‌های دوره را به شکل ویدئویی مشاهده کرده و پس از آن، در کلاس پرسش و پاسخی که به صورت زنده با حضور مدرس برگزار می‌گردد، شرکت و اشکالات خود را رفع کنید.&nbsp;</strong></span></p>
@@ -869,12 +1011,57 @@
           <p><span style="color: #000000;"><span style="color: #800000;"><strong>Level I:</strong></span> از سه سطح، کسانی که در سطح I هستند کمترین مسئولیت را دارند. تکنسین‌های سطح I فقط واجد شرایط انجام کالیبراسیون، معاینات و ارزیابی‌های خاص با دستورالعمل های کتبی خاص هستند.</span></p>
           <p><span style="color: #000000;"><span style="color: #800000;"><strong>Level II:</strong></span> در سطح 2 ، شاغلین وظایف و مسئولیت‌های بیشتری را به دست می‌آورند و واجد شرایط تنظیم و کالیبره کردن تجهیزات و تفسیر و ارزیابی نتایج بازرسی‌ها هستند. تکنسین‌های سطح دوم نیز باید بتوانند دستورالعمل‌های مکتوب را تهیه کنند، آموزش‌های حین کار را ارائه دهند و نتایج بازرسی را گزارش کنند.</span></p>
           <p><span style="color: #000000;"><span style="color: #800000;"><strong>Level III:</strong></span> در نهایت، در سطح III، تکنسین باید توانایی ایجاد تکنیک‌ها، تفسیر کدها، و طراحی روش‌ها و تکنیک‌های آزمایشی را داشته باشند. افرادی که در سطح III هستند همچنین می توانند تکنسین های سطح I و II را برای صدور گواهینامه آموزش داده و عملکرد و توانایی آن‌ها را مورد بررسی قرار دهند.</span></p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
         </section>
-        <hr />
+        <!-- course prerequisites or supplement -->
+        <div class="my-8 scroll-mt-30 md:scroll-mt-40 py-4 border-t-2 border-b-2 border-dashed" id="pos-course">
+            <h2 class="text-lg text-primary-500 font-semibold mb-4">دوره‌های مکمل و پیش‌نیاز:</h2>
+          <ul class="space-y-3 mr-2">
+            <li>
+              <a href="#" class="inline-flex gap-x-1 text-zinc-600 hover:text-zinc-800">
+                <span><svg class="w-5 h-5"><use href="#pos-tutorial-icon"></use></svg></span>
+                <span class="font-medium">آشنایی با اصول و قواعد حاکم بر تست ذرات مغناطیسی <span class="text-sm"> (پیش‌نیاز) </span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inline-flex gap-x-1 text-zinc-600 hover:text-zinc-800">
+                <span><svg class="w-5 h-5"><use href="#pos-tutorial-icon"></use></svg></span>
+                <span class="font-medium">آشنایی با اصول و قواعد حاکم بر تست ذرات مغناطیسی <span class="text-sm"> (پیش‌نیاز) </span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inline-flex gap-x-1 text-zinc-600 hover:text-zinc-800">
+                <span><svg class="w-5 h-5"><use href="#pos-tutorial-icon"></use></svg></span>
+                <span class="font-medium">آشنایی با اصول و قواعد حاکم بر تست ذرات مغناطیسی <span class="text-sm"> (مکمل) </span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inline-flex gap-x-1 text-zinc-600 hover:text-zinc-800">
+                <span><svg class="w-5 h-5"><use href="#pos-tutorial-icon"></use></svg></span>
+                <span class="font-medium">آشنایی با اصول و قواعد حاکم بر تست ذرات مغناطیسی <span class="text-sm"> (مکمل) </span></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="inline-flex gap-x-1 text-zinc-600 hover:text-zinc-800">
+                <span><svg class="w-5 h-5"><use href="#pos-tutorial-icon"></use></svg></span>
+                <span class="font-medium">آشنایی با اصول و قواعد حاکم بر تست ذرات مغناطیسی <span class="text-sm"> (مکمل) </span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- course free episode -->
+        <div class="mt-6 scroll-mt-30 md:scroll-mt-40 bg-primary-100/20 p-4 rounded-xl shadow" id="free-course">
+          <h2 class="text-lg text-primary-500 font-semibold mb-4">نمونه تدریس:</h2>
+          <ul>
+            <li>
+              <button type="button" class="course-item-button flex gap-x-1" data-video-name="by7m9gfnrnag-1080p.mp4" data-video-config="https://ez.arvanvod.ir/VLK8LB5xqb/yGbz4K6Ejv/origin_config.json" data-status="on">
+                <span class="mt-0.5"><svg class="w-5 h-5"><use href="#youtube-icon"></use></svg></span>
+                <span>خطوط میدان مغناطیسی و دسته بندی مواد از نظر خاصیت مغناطیسی</span>
+              </button>
+            </li>
+          </ul>
+        </div>
         <!-- faq section -->
-        <div class="my-4">
+        <div class="mt-6 scroll-mt-30 md:scroll-mt-40" id="faq-course">
           <span class="text-lg font-medium text-tertiary-700 mb-4 block">سوالات متداول</span>
           <div class="overflow-hidden">
             <div
@@ -929,22 +1116,14 @@
             </div>
           </div>
         </div>
-        <!-- curse class -->
-
         <!-- comment and question-of-teacher -->
-        <!-- Tabs -->
-        <div class="bg-stone-50 rounded-xl shadow overflow-hidden mt-10">
+        <div class="mt-10 bg-stone-50 scroll-mt-30 md:scroll-mt-40 rounded-xl shadow overflow-hidden" id="comment-course">
           <div
-               class="flex items-center justify-between text-tertiary-600 text-sm xs:text-base">
+               class="text-tertiary-600">
             <div
-                 class="comment-tab active py-8 text-center w-1/2 bg-stone-100 cursor-pointer"
+                 class="comment-tab active py-8 text-center"
                  data-comment-type="user-comment">
               نظرات شرکت کنندگان
-            </div>
-            <div
-                 class="comment-tab py-8 text-center w-1/2 bg-stone-100 cursor-pointer"
-                 data-comment-type="user-faq">
-              پرسش و پاسخ با استاد
             </div>
           </div>
           <!-- Content -->
@@ -1073,34 +1252,11 @@
               </form>	</div>
             </div>
           </div>
-          <div
-               class="comment-content p-4"
-               id="user-faq"
-               style="display: none">
-            <div class="space-y-4">
-              <div class="flex items-start gap-x-1 text-tertiary-600">
-                <svg class="w-4 h-4 relative top-1">
-                  <use href="#check-circle-icon"></use>
-                </svg>
-                برای سوال از استاد لطفا وارد انجمن شوید.
-              </div>
-              <div class="flex items-start gap-x-1 text-tertiary-600">
-                <svg class="w-4 h-4 relative top-1">
-                  <use href="#check-circle-icon"></use>
-                </svg>
-                فقط کاربرانی که در این دوره ثبت نام کرده اند اجازه ارسال سوال
-                دارند.
-              </div>
-            </div>
-            <div class="text-center mt-2">
-              <button id="questionCourse" class="bg-secondary-500 py-1.5 px-2 rounded text-white hover:bg-secondary-600 transition-colors" data-status="register">ورود به انجمن</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-    <!-- similar courses -->
-    <div class="container my-16">
+    <!-- course related -->
+    <div class="container my-16 scroll-mt-30 md:scroll-mt-40" id="related-course">
       <div class="flex items-center text-xl gap-x-1 font-semibold mb-8">
         <div class="image w-8">
           <img src="./assets/images/logo/2reha-icon.webp" alt="" />
@@ -1659,6 +1815,9 @@
        id="overlay"
        class="bg-black/20 fixed top-0 right-0 left-0 bottom-0 z-30 hidden transition-all scale-0">
   </div>
+<div class="fixed bottom-4 left-4 z-20">
+<a href="#body-tag" class="block bg-primary-500 text-white p-1 rounded-full"><svg class="w-12 h-12"><use href="#scrollup-icon"></use></svg></a>
+</div>
 </body>
 <script src="./assets/js/swiper-bundle.min.js"></script>
 <script src="./assets/js/sweetalert2@11.js"></script>
