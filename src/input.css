@@ -1184,7 +1184,7 @@ div#gform_wrapper_3 form#gform_3 div.gform_footer input[type=submit] {
 @apply bg-secondary-500 px-4 py-2 rounded-lg shadow hover:bg-secondary-600 transition-colors text-white cursor-pointer;
 }
 div#search_result_desktop, div#search_result_mobile {
-  @apply absolute top-full mt-2 bg-slate-100 rounded-lg z-20 shadow p-4;
+  @apply absolute w-full top-full mt-2 bg-slate-100 rounded-lg z-20 shadow p-4;
 }
 div#search_result_desktop > div.search-item-list > a, div#search_result_mobile > div.search-item-list > a {
   @apply flex gap-x-1.5 items-center text-zinc-600 font-medium transition-colors;
