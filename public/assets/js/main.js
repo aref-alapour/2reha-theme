@@ -1,4 +1,7 @@
 const overlay = document.querySelector("#overlay"),
+    btnScrollTop = document.querySelector("#btn-scroll-top"),
+    siteNotification = document.querySelector('#siteNotification'),
+    closeNotification = document.querySelector('#closeNotification'),
     mobileMenuIcon = document.querySelector("#mobileMenuIcon"),
     MobileMenuSection = document.querySelector("#MobileMenuSection"),
     MenuCloseIcon = document.querySelector("#MenuCloseIcon"),
@@ -6,6 +9,14 @@ const overlay = document.querySelector("#overlay"),
     contentTab = document.querySelectorAll(".tab-content"),
     menuMobileChild = document.querySelectorAll('.mobile-menu > ul.menu li.menu-item.menu-item-has-children > a');
 
+if (closeNotification){
+    closeNotification.addEventListener('click', ()=>{
+        siteNotification.style.height = '0px';
+        setTimeout(() => {
+            siteNotification.remove();
+        }, 600);
+    })
+}
 menuMobileChild.forEach((element) => {
     element.addEventListener("click", function () {
         this.parentElement.classList.toggle('active');
@@ -100,6 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+btnScrollTop.addEventListener('click', ()=>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+})
+
 // SaveBlog
 const saveBlog = document.querySelectorAll(".blog-save");
 saveBlog.forEach((element) => {

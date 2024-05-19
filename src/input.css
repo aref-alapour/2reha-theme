@@ -179,32 +179,6 @@
   .footer-menu > ul li > a {
     @apply text-tertiary-400 hover:text-primary-600 transition-colors;
   }
-  .animate-type {
-    animation: type 0.5s infinite alternate linear;
-  }
-  @keyframes type {
-    0% {
-      opacity: 1;
-      visibility: visible;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-  .animate-scale {
-    animation: scale 0.5s alternate infinite linear;
-  }
-  @keyframes scale {
-    0% {
-      opacity: 1;
-      transform: scale(1.1);
-    }
-    100% {
-      opacity: 0.9;
-      transform: scale(1);
-    }
-  }
   .menu-btn {
     @apply relative;
     transition: 0.5s color linear;
@@ -1178,4 +1152,52 @@ form#gform_2 label {
 }
 form#gform_2 {
   @apply flex;
+}
+div#gform_wrapper_3 {
+ @apply w-full my-4;
+}
+div#gform_wrapper_3 div.gform_heading {
+  @apply hidden;
+}
+div#gform_wrapper_3 form#gform_3 div.gform-body div.gform_fields {
+  @apply space-y-6;
+}
+div#gform_wrapper_3 form#gform_3 div.gform-body div.gform_fields label.gfield_label{
+@apply font-medium text-sm;
+}
+div#gform_wrapper_3 form#gform_3 div.gform-body div.gform_fields label.gfield_label span.gfield_required {
+@apply text-red-500;
+}
+div#gform_wrapper_3 form#gform_3 div.gform-body div.gform_fields input {
+  @apply w-full h-10 rounded-lg border px-2 focus:outline-0;
+}
+div#gform_wrapper_3 form#gform_3 div.gform-body div.gform_fields div.gfield_description{
+  @apply text-sm text-zinc-600;
+}
+div#gform_wrapper_3 form#gform_3 div.gform-body div.gform_fields textarea {
+  @apply w-full h-40 !resize-none rounded-lg border p-2 focus:outline-0;
+}
+div#gform_wrapper_3 form#gform_3 div.gform_footer {
+  @apply text-left mt-4;
+}
+div#gform_wrapper_3 form#gform_3 div.gform_footer input[type=submit] {
+@apply bg-secondary-500 px-4 py-2 rounded-lg shadow hover:bg-secondary-600 transition-colors text-white cursor-pointer;
+}
+div#search_result_desktop, div#search_result_mobile {
+  @apply absolute top-full mt-2 bg-slate-100 rounded-lg z-20 shadow p-4;
+}
+div#search_result_desktop > div.search-item-list > a, div#search_result_mobile > div.search-item-list > a {
+  @apply flex gap-x-1.5 items-center text-zinc-600 font-medium transition-colors;
+}
+div#search_result_desktop > div.search-item-list:hover > a, div#search_result_mobile > div.search-item-list:hover > a {
+  @apply text-zinc-800;
+}
+div#search_result_desktop > div.search-item-list > a > img, div#search_result_mobile > div.search-item-list > a > img {
+  @apply w-16 rounded-lg opacity-75 transition-opacity;
+}
+div#search_result_desktop > div.search-item-list:hover > a > img, div#search_result_mobile > div.search-item-list:hover > a > img {
+  @apply opacity-100;
+}
+div#search_result_desktop > div.search-item-list > a > span, div#search_result_mobile > div.search-item-list > a > span {
+  @apply line-clamp-1;
 }

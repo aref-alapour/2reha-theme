@@ -56,6 +56,25 @@ module.exports = {
           4: "#757575",
         }
       },
+      keyframes: {
+        off: {
+          '0%, 100%': { transform: 'rotate(-3deg) scale(1.2)' },
+          '50%': { transform: 'rotate(3deg) scale(1)' },
+        },
+        scale: {
+          '0%': { transform: 'scale(1.1)', opacity: '1' },
+          '100%': { transform: 'scale(1)', opacity: '.9' },
+        },
+        type: {
+          '0%': { visible: 'visible', opacity: '1' },
+          '100%': { visible: 'hidden', opacity: '0' },
+        }
+      },
+      animation: {
+        off: 'off 1s ease-in-out infinite',
+        scale: 'scale .5s ease-in-out alternate infinite',
+        type: 'type .5s ease-in-out alternate infinite',
+      },
       fontFamily: {
         "YekanBakh" : "YekanBakh",
       },
