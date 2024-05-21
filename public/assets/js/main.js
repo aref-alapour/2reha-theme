@@ -46,10 +46,10 @@ let menuSectionFunc = function ($type) {
 };
 let MenuCloseIconFunc = function ($type) {
     if ($type) {
-        MenuCloseIcon.classList.remove("-translate-x-10");
+        MenuCloseIcon.classList.remove("-translate-x-20");
     }
     if (!$type) {
-        MenuCloseIcon.classList.add("-translate-x-10");
+        MenuCloseIcon.classList.add("-translate-x-20");
     }
 };
 let tabActive = function () {
@@ -675,3 +675,36 @@ favoriteBtnAcc.forEach(element => {
     })
 });
 
+// TopNavbar
+document.addEventListener("DOMContentLoaded", () => {
+    function getValue(d, timePart) {
+        var val = 0
+        switch (timePart) {
+            case "hours":
+                val = 23 - parseInt(d.getHours());
+                break;
+            case "minutes":
+                val = 59 - parseInt(d.getMinutes())
+                break;
+            case "seconds":
+                val = 59 - parseInt(d.getSeconds())
+                break;
+
+            default:
+                break;
+        }
+        return val.toString().padStart(2, '0');
+    }
+    function init() {
+        setInterval(function () {
+            var d = new Date();
+            var h = getValue(d, "hours");
+            var m = getValue(d, "minutes");
+            var s = getValue(d, "seconds");
+
+            document.getElementById("clock").innerHTML = "<div>" + s + "</div><div>" + m + "</div><div>" + h + "</div>";
+
+        }, 1000);
+    }
+    init()
+});

@@ -359,12 +359,6 @@
 <!-- Header End -->
 <!-- Main Start -->
 <section class="container mt-36 mb-16 md:mt-24 md:mb-12">
-    <button id="mobile-list-item-container-open" class="flex items-center justify-between gap-x-1 my-3 md:hidden">
-        <svg class="w-6 h-6">
-            <use href="#mobileMenu-icon"></use>
-        </svg>
-        <span class="text-xl font-medium mt-1">لیست جلسات</span>
-    </button>
     <div class="flex items-start gap-x-10">
         <!-- DesktopList -->
         <div class="desktop-list-item-container">
@@ -914,7 +908,7 @@
             <div class="w-full">
                 <iframe id="course-player-iframe-element"
                         src="https://player.arvancloud.ir/index.html?config=https://ez.arvanvod.ir/VLK8LB5xqb/nqbg2ngyXo/origin_config.json&skin=shaka"
-                        class="w-full aspect-video rounded-lg md:rounded-xl border-0 shadow"
+                        class="w-full aspect-video rounded-lg md:rounded-xl border-0 shadow mt-4 md:mt-0"
                         name="gtdvdzs1xgxe-1080p.mp4"
                         frameborder="0"
                         allow="accelerometer;
@@ -924,12 +918,17 @@
                         webkitallowfullscreen="true"
                         mozallowfullscreen="true">
                 </iframe>
+                <div class="text-center my-4 md:hidden">
+                    <button id="mobile-list-item-container-open" class="bg-primary-500 px-3 py-1.5 text-lg font-semibold text-white rounded-lg shadow">
+                        مشاهده محتوای دوره
+                    </button>
+                </div>
             </div>
-            <div class="comment-tab active flex justify-between items-center py-6 px-3 text-center rounded-xl shadow overflow-hidden mt-10">
+            <div class="comment-tab active flex justify-between items-center py-4 px-3 text-center rounded-xl shadow overflow-hidden md:mt-10">
                     <span>
                 پرسش و پاسخ با استاد
                     </span>
-                <button id="product-question-btn" class="bg-primary-500 px-2 py-1.5 rounded-lg shadow">
+                <button id="product-question-btn" class="bg-slate-200 text-secondary-500 font-bold px-2 py-1.5 rounded-lg shadow">
                     ثبت سوال جدید
                 </button>
             </div>

@@ -773,7 +773,13 @@
     @apply inline-flex items-center justify-center rounded h-10 w-10 bg-primary-500 shadow-sm text-white;
   }
   .add-to-card, .course-page-btn {
-    @apply w-full block bg-green-light hover:bg-green-dark py-2 text-center text-lg font-semibold rounded-lg text-white transition-colors;
+    @apply w-full block py-2 text-center text-lg font-semibold rounded-lg text-white transition-colors;
+  }
+  .course-page-btn {
+    @apply bg-primary-500 hover:bg-primary-600;
+  }
+  .add-to-card {
+    @apply bg-green-light hover:bg-green-dark;
   }
   .search-tab {
     @apply bg-slate-100 py-1.5 px-3 rounded-lg text-zinc-500 hover:bg-slate-200 hover:text-zinc-700 transition-colors;
@@ -859,10 +865,10 @@
     margin: 0;
   }
   div.desktop-list-item-container{
-    @apply min-w-[200px] w-max max-w-[300px] bg-slate-50 shadow rounded-lg p-3 hidden md:block;
+    @apply min-w-[300px] w-max max-w-[350px] bg-slate-50 shadow rounded-lg p-3 hidden md:block;
   }
   div.mobile-list-item-container {
-    @apply w-max max-w-[300px] fixed bg-white shadow px-3 py-2.5 top-10 bottom-10 z-40 rounded-lg transition-transform duration-500;
+    @apply w-max max-w-[330px] fixed bg-white shadow px-3 py-2.5 top-10 bottom-10 z-40 rounded-lg transition-transform duration-500;
   }
 
   div.list-box-header{
@@ -1077,13 +1083,13 @@ a.added_to_cart.wc-forward {
   @apply pt-4 md:pt-0 md:pr-8 border-t-2 md:border-t-0 md:border-r-2 border-r-zinc-200 border-t-zinc-200 border-dashed;
 }
 .woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card {
-  @apply w-72 border rounded-lg relative overflow-hidden shadow;
+  @apply bg-white w-72 border rounded-lg relative overflow-hidden shadow;
 }
 .woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card .purchased{
   @apply flex items-center gap-x-1 bg-slate-50/90 absolute left-1/2 -translate-x-1/2 w-max p-2 rounded-lg top-2 font-medium;
 }
-.woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card h2.title {
-  @apply px-2 text-justify text-sm font-medium line-clamp-2 mt-2 text-zinc-600 hover:text-primary-700 transition-colors;
+.woocommerce .woocommerce-order .theme-order-section .order-course-column .order-course-card h2.title a {
+  @apply px-2 text-justify text-sm font-medium line-clamp-1 mt-2 text-zinc-600 hover:text-primary-700 transition-colors;
 }
 
 .comment-respond {
@@ -1108,7 +1114,7 @@ a.added_to_cart.wc-forward {
   @apply text-left;
 }
 .comment-respond > form p.form-submit input.submit {
-  @apply bg-primary-500 cursor-pointer px-2 py-1.5 rounded-lg text-white text-sm hover:bg-primary-600 transition-colors;
+  @apply bg-primary-500 hover:bg-primary-600 transition-colors cursor-pointer px-2 py-1.5 rounded-lg text-white text-sm;
 }
 .woocommerce .woocommerce-order .theme-order-section {
   @apply flex flex-col md:flex-row justify-center items-center;
@@ -1200,4 +1206,38 @@ div#search_result_desktop > div.search-item-list:hover > a > img, div#search_res
 }
 div#search_result_desktop > div.search-item-list > a > span, div#search_result_mobile > div.search-item-list > a > span {
   @apply line-clamp-1;
+}
+.festivel-khordad {
+  background:linear-gradient(40deg, rgba(0, 165, 145, 0.87), rgba(1, 59, 60, 0.87)), url("../images/barg-2-1.png");
+  background-size:contain;
+  background-repeat: repeat-x;
+}
+div#clock {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+div#clock div {
+  text-decoration: none;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1.5px solid #8CD5B5;
+  border-left: 1.5px solid #8CD5B5;
+  border-bottom: 1.5px solid #034126;
+  border-right: 1.5px solid #034126;
+  border-radius: 10px;
+  width: 45px;
+  height: 50px;
+  color: #004445;
+  text-shadow: -1px -1px 0px #00686b;
+  background: radial-gradient(at 30% 15%, #cafbde, #dcfce7);
+  box-shadow: 0px 3px 5px rgba(67, 67, 67, 0.5),inset 1px 4px 5px rgba(255,255,255,.7), inset -1px -4px 5px rgba(0,0,0,.2);
+  position: relative;
+}
+@media screen and (max-width: 700px) {
+div#clock div {
+  height: 45px;
+}
 }
