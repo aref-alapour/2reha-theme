@@ -279,6 +279,9 @@
         <title>arrow-left-thin</title>
         <path d="M10.05 16.94V12.94H18.97L19 10.93H10.05V6.94L5.05 11.94Z"/>
     </symbol>
+    <symbol id="video-play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8,5.14V19.14L19,12.14L8,5.14Z"/>
+    </symbol>
 </svg>
 <!-- All Icon End -->
 <!--  TopBar Start -->
@@ -289,8 +292,10 @@
             <span><img src="./assets/images/leaf-pic-1.png" alt="" class="w-8 animate-bounce hidden md:block"></span>
             <span>جشنوارۀ خردادگان؛ آبادی مهارت‌ها!</span>
         </div>
-        <div class="font-semibold flex items-center gap-x-6 bg-green-100 text-zinc-800 px-3 py-1 rounded-lg relative"><span class="absolute -right-2 text-white inline-flex items-center justify-center animate-off border border-dashed bg-primary-500 h-14 w-14 rounded-full text-2xl">40%</span><span class="text-xl" style="margin-right: 50px;"> تخفیف دوره‌های آموزشی</span></div>
-            <div id="clock"></div>
+        <div class="font-semibold flex items-center gap-x-6 bg-green-100 text-zinc-800 px-3 py-1 rounded-lg relative">
+            <span class="absolute -right-2 text-white inline-flex items-center justify-center animate-off border border-dashed bg-primary-500 h-14 w-14 rounded-full text-2xl">40%</span><span
+                class="text-xl" style="margin-right: 50px;"> تخفیف دوره‌های آموزشی</span></div>
+        <div id="clock"></div>
     </div>
     <div
             class="bg-white hover:bg-primary-500 w-7 h-7 flex items-center justify-center rounded-full absolute left-3 bottom-4 md:top-1/2 md:-translate-y-1/2 cursor-pointer group transition-colors"
@@ -1346,7 +1351,7 @@
                 class="header-section flex justify-between items-center mb-4 md:mb-8">
             <div class="flex items-center gap-x-1 text-xl font-semibold">
                 <div class="image w-8">
-                    <img src="./assets/images/logo/2reha-icon.webp" alt=""/>
+                    <img src="./assets/images/logo/2reha-icon.webp" alt="">
                 </div>
                 جدیدترین‌ها
             </div>
@@ -1374,7 +1379,7 @@
                                 </div>
                                 <div class="off">8<span>%</span></div>
                                 <div class="image">
-                                    <img src="./assets/images/course/01.webp" alt=""/>
+                                    <img src="./assets/images/course/01.webp" alt="" width="286" height="144">
                                 </div>
                                 <div class="course-detail">
                                     <div class="flex gap-1 items-center">
@@ -4112,13 +4117,19 @@
 <!-- TeachSection Start -->
 <section class="py-8 md:py-0 md:h-20 lg:h-40 bg-slate-100 flex items-center my-8">
     <div class="container flex flex-col md:flex-row items-center justify-center md:gap-x-10">
-        <div class="w-full md:w-60 lg:w-80 rounded-lg overflow-hidden shadow-lg">
-            <iframe id="videoIframe"
-                    src="https://player.arvancloud.ir/index.html?config=https://ez.arvanvod.ir/VLK8LB5xqb/kZWqgKq7Vw/origin_config.json&skin=shaka"
-                    class="aspect-video w-full" name="couqwjqzyknw-1080p.mp4" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
-            </iframe>
+        <div class="relative w-full md:w-60 lg:w-80 h-fit rounded-lg overflow-hidden shadow-lg">
+            <img src="./assets/images/site/thumbnail.jpg"
+                 alt="وبسایت دوره‌ها" width="320" height="180">
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 inline-flex bg-[#0000004C] opacity-0 animate-play rounded-full"></span>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 inline-flex bg-[#0000004C] opacity-0 animate-play animation-delay-1000 rounded-full"></span>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 inline-flex bg-[#0000004C] opacity-0 animate-play animation-delay-2000 rounded-full"></span>
+            <button type="button"
+                    class="absolute course-item-button top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-500 w-14 h-14 inline-flex items-center justify-center rounded-full text-gray-100 hover:text-gray-300 transition-colors z-20"
+                    data-video-name="couqwjqzyknw-1080p.mp4" data-video-config="https://ez.arvanvod.ir/VLK8LB5xqb/kZWqgKq7Vw/origin_config.json" data-status="on">
+                <svg class="w-12 h-12">
+                    <use href="#video-play-icon"></use>
+                </svg>
+            </button>
         </div>
         <div class="my-8 md:my-0 text-center text-secondary-500">
             <h2 class="text-md lg:text-lg xl:text-xl font-semibold">
@@ -4409,206 +4420,222 @@
     </div>
 </section>
 <!-- BlogSlider End -->
-<!-- Footer Start -->
-<footer class="mt-8">
-    <div class="bg-[#d5d3d3] py-8">
-        <div class="container">
-            <div
-                    class="flex flex-col md:flex-row gap-y-2 md:gap-y-0 items-center gap-x-20">
-                <div>
-                    <div class="flex items-center gap-x-1 mb-4">
-                        <div class="w-6">
-                            <img src="./assets/images/logo/2reha-icon.webp" alt=""/>
+<div class="video-container">
+    <div class="video-icon-close"
+         id="videoContainerCloseIcon">
+        <svg class="w-5 h-5 text-red-600">
+            <use href="#mobileMenuClose-icon"></use>
+        </svg>
+    </div>
+    <div class="video-item-iframe" id="videoItem">
+        <iframe id="videoIframe" src=""
+                style="border:0 #ffffff none;" name="" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
+        </iframe>
+    </div>
+</div>
+    <!-- Footer Start -->
+    <footer class="mt-8">
+        <div class="bg-[#d5d3d3] py-8">
+            <div class="container">
+                <div
+                        class="flex flex-col md:flex-row gap-y-2 md:gap-y-0 items-center gap-x-20">
+                    <div>
+                        <div class="flex items-center gap-x-1 mb-4">
+                            <div class="w-6">
+                                <img src="./assets/images/logo/2reha-icon.webp" alt=""/>
+                            </div>
+                            <div class="text-xl font-semibold">درباره دوره‌ها</div>
                         </div>
-                        <div class="text-xl font-semibold">درباره دوره‌ها</div>
+                        <p class="text-tertiary-500 text-sm md:text-base text-justify">
+                            دوره ها، پلتفرم دوره های آموزشی برای فارسی زبان هاست. اینجا می
+                            تونید دوره شرکت کنید و آموزش ببینید یا دوره ایجاد کنید و به کسب
+                            درآمد برسید. ما کلیه ابزار لازم برای شرکت یا برگزاری دوره های
+                            آنلاین و ویدئویی رو در اختیار شما قرار میدهیم. اینجا می تونید
+                            انواع دوره رو در کلیه زمینه ها، پیدا یا برگزار کنید.
+                        </p>
                     </div>
-                    <p class="text-tertiary-500 text-sm md:text-base text-justify">
-                        دوره ها، پلتفرم دوره های آموزشی برای فارسی زبان هاست. اینجا می
-                        تونید دوره شرکت کنید و آموزش ببینید یا دوره ایجاد کنید و به کسب
-                        درآمد برسید. ما کلیه ابزار لازم برای شرکت یا برگزاری دوره های
-                        آنلاین و ویدئویی رو در اختیار شما قرار میدهیم. اینجا می تونید
-                        انواع دوره رو در کلیه زمینه ها، پیدا یا برگزار کنید.
-                    </p>
-                </div>
-                <div class="flex items-center gap-x-4">
-                    <div
-                            class="w-20 h-20 bg-white rounded-2xl overflow-hidden shadow-md">
-                        <img src="./assets/images/li-enamad.webp" alt=""/>
-                    </div>
-                    <div
-                            class="w-20 h-20 bg-white rounded-2xl overflow-hidden shadow-md">
-                        <img src="./assets/images/sadad.png" alt=""/>
+                    <div class="flex items-center gap-x-4">
+                        <div
+                                class="w-20 h-20 bg-white rounded-2xl overflow-hidden shadow-md">
+                            <img src="./assets/images/li-enamad.webp" alt=""/>
+                        </div>
+                        <div
+                                class="w-20 h-20 bg-white rounded-2xl overflow-hidden shadow-md">
+                            <img src="./assets/images/sadad.png" alt=""/>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <hr class="my-4"/>
-        <div class="container">
-            <div
-                    class="flex flex-col gap-y-2 lg:gap-y-0 lg:flex-row items-center justify-between gap-x-4">
-                <div class="text-sm font-semibold text-tertiary-600">
-                    از آخرین مطالب و تخفیف‌های دوره ها همیشه با خبر باشید!
-                </div>
-                <div>
-                    <form method="post" enctype="multipart/form-data" target="gform_ajax_frame_2" id="gform_2"
-                          action="/#gf_2" data-formid="2" novalidate="">
-                        <div class="gform-body gform_body">
-                            <div id="gform_fields_2"
-                                 class="gform_fields top_label form_sublabel_below description_below">
-                                <div id="field_2_1"
-                                     class="gfield gfield--type-phone gfield--input-type-phone gfield--width-third w-full field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"
-                                     data-js-reload="field_2_1">
-                                    <label class="gfield_label gform-field-label" for="input_2_1">شماره موبایل</label>
-                                    <div class="ginput_container ginput_container_phone">
-                                        <input name="input_1" id="input_2_1" type="tel" value="" class="medium"
-                                               placeholder="شماره موبایل" aria-invalid="false">
+            <hr class="my-4"/>
+            <div class="container">
+                <div
+                        class="flex flex-col gap-y-2 lg:gap-y-0 lg:flex-row items-center justify-between gap-x-4">
+                    <div class="text-sm font-semibold text-tertiary-600">
+                        از آخرین مطالب و تخفیف‌های دوره ها همیشه با خبر باشید!
+                    </div>
+                    <div>
+                        <form method="post" enctype="multipart/form-data" target="gform_ajax_frame_2" id="gform_2"
+                              action="/#gf_2" data-formid="2" novalidate="">
+                            <div class="gform-body gform_body">
+                                <div id="gform_fields_2"
+                                     class="gform_fields top_label form_sublabel_below description_below">
+                                    <div id="field_2_1"
+                                         class="gfield gfield--type-phone gfield--input-type-phone gfield--width-third w-full field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"
+                                         data-js-reload="field_2_1">
+                                        <label class="gfield_label gform-field-label" for="input_2_1">شماره
+                                            موبایل</label>
+                                        <div class="ginput_container ginput_container_phone">
+                                            <input name="input_1" id="input_2_1" type="tel" value="" class="medium"
+                                                   placeholder="شماره موبایل" aria-invalid="false">
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="field_2_2"
-                                     class="gfield gfield--type-email gfield--input-type-email gfield--width-third field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"
-                                     data-js-reload="field_2_2">
-                                    <label class="gfield_label gform-field-label" for="input_2_2">ایمیل</label>
-                                    <div class="ginput_container ginput_container_email">
-                                        <input name="input_2" id="input_2_2" type="email" value="" class="large"
-                                               placeholder="آدرس ایمیل" aria-invalid="false">
+                                    <div id="field_2_2"
+                                         class="gfield gfield--type-email gfield--input-type-email gfield--width-third field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"
+                                         data-js-reload="field_2_2">
+                                        <label class="gfield_label gform-field-label" for="input_2_2">ایمیل</label>
+                                        <div class="ginput_container ginput_container_email">
+                                            <input name="input_2" id="input_2_2" type="email" value="" class="large"
+                                                   placeholder="آدرس ایمیل" aria-invalid="false">
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="field_submit"
-                                     class="gfield gfield--type-submit gfield--width-third field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"
-                                     data-field-class="gform_editor_submit_container" data-field-position="inline"
-                                     data-js-reload="true">
-                                    <input type="submit" id="gform_submit_button_2"
-                                           class="gform-button gform-button--white  button" value="عضویت"
-                                           onclick="if(window[&quot;gf_submitting_2&quot;]){return false;}  if( !jQuery(&quot;#gform_2&quot;)[0].checkValidity || jQuery(&quot;#gform_2&quot;)[0].checkValidity()){window[&quot;gf_submitting_2&quot;]=true;}  "
-                                           onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_2&quot;]){return false;} if( !jQuery(&quot;#gform_2&quot;)[0].checkValidity || jQuery(&quot;#gform_2&quot;)[0].checkValidity()){window[&quot;gf_submitting_2&quot;]=true;}  jQuery(&quot;#gform_2&quot;).trigger(&quot;submit&quot;,[true]); }">
+                                    <div id="field_submit"
+                                         class="gfield gfield--type-submit gfield--width-third field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"
+                                         data-field-class="gform_editor_submit_container" data-field-position="inline"
+                                         data-js-reload="true">
+                                        <input type="submit" id="gform_submit_button_2"
+                                               class="gform-button gform-button--white  button" value="عضویت"
+                                               onclick="if(window[&quot;gf_submitting_2&quot;]){return false;}  if( !jQuery(&quot;#gform_2&quot;)[0].checkValidity || jQuery(&quot;#gform_2&quot;)[0].checkValidity()){window[&quot;gf_submitting_2&quot;]=true;}  "
+                                               onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_2&quot;]){return false;} if( !jQuery(&quot;#gform_2&quot;)[0].checkValidity || jQuery(&quot;#gform_2&quot;)[0].checkValidity()){window[&quot;gf_submitting_2&quot;]=true;}  jQuery(&quot;#gform_2&quot;).trigger(&quot;submit&quot;,[true]); }">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="gform_footer before">
-                            <input type="hidden" name="gform_ajax"
-                                   value="form_id=2&amp;title=&amp;description=&amp;tabindex=0&amp;theme=orbital">
-                            <input type="hidden" class="gform_hidden" name="is_submit_2" value="1">
-                            <input type="hidden" class="gform_hidden" name="gform_submit" value="2">
-                            <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
-                            <input type="hidden" class="gform_hidden" name="state_2"
-                                   value="WyJbXSIsIjY1MzI1ZjFmNThlMzY5ZjZkZTJkOTQ1ZTE2MGVmYjhhIl0=">
-                            <input type="hidden" class="gform_hidden" name="gform_target_page_number_2"
-                                   id="gform_target_page_number_2" value="0">
-                            <input type="hidden" class="gform_hidden" name="gform_source_page_number_2"
-                                   id="gform_source_page_number_2" value="1">
-                            <input type="hidden" name="gform_field_values" value="">
-                        </div>
-                    </form>
-                    <form
-                            action=""
-                            class="subscription-form flex flex-col md:flex-row md:gap-x-2 md:gap-y-0 gap-y-2">
-                        <input type="tel" placeholder="شماره موبایل"/>
-                        <input type="email" placeholder="آدرس ایمیل"/>
-                        <input type="submit" value="عضویت"/>
-                    </form>
+                            <div class="gform_footer before">
+                                <input type="hidden" name="gform_ajax"
+                                       value="form_id=2&amp;title=&amp;description=&amp;tabindex=0&amp;theme=orbital">
+                                <input type="hidden" class="gform_hidden" name="is_submit_2" value="1">
+                                <input type="hidden" class="gform_hidden" name="gform_submit" value="2">
+                                <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+                                <input type="hidden" class="gform_hidden" name="state_2"
+                                       value="WyJbXSIsIjY1MzI1ZjFmNThlMzY5ZjZkZTJkOTQ1ZTE2MGVmYjhhIl0=">
+                                <input type="hidden" class="gform_hidden" name="gform_target_page_number_2"
+                                       id="gform_target_page_number_2" value="0">
+                                <input type="hidden" class="gform_hidden" name="gform_source_page_number_2"
+                                       id="gform_source_page_number_2" value="1">
+                                <input type="hidden" name="gform_field_values" value="">
+                            </div>
+                        </form>
+                        <form
+                                action=""
+                                class="subscription-form flex flex-col md:flex-row md:gap-x-2 md:gap-y-0 gap-y-2">
+                            <input type="tel" placeholder="شماره موبایل"/>
+                            <input type="email" placeholder="آدرس ایمیل"/>
+                            <input type="submit" value="عضویت"/>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr class="my-4"/>
-        <div class="container">
-            <div class="grid grid-cols-2 gap-x-4 gap-y-6 md:gap-4 md:flex md:justify-around">
-                <div class="text-center">
-                    <div class="font-bold text-tertiary-600 mb-2">دسترسی سریع</div>
-                    <nav class="footer-menu">
-                        <ul>
+            <hr class="my-4"/>
+            <div class="container">
+                <div class="grid grid-cols-2 gap-x-4 gap-y-6 md:gap-4 md:flex md:justify-around">
+                    <div class="text-center">
+                        <div class="font-bold text-tertiary-600 mb-2">دسترسی سریع</div>
+                        <nav class="footer-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">پنل کاربری</a>
+                                </li>
+                                <li>
+                                    <a href="#">دوره‌های من</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-bold text-tertiary-600 mb-2">راهنما</div>
+                        <ul class="space-y-1 text-tertiary-400">
                             <li>
-                                <a href="#">پنل کاربری</a>
+                                <a
+                                        href="#"
+                                        class="text-tertiary-400 hover:text-primary-600 transition-colors">شرکت
+                                    کنندگان</a>
                             </li>
                             <li>
-                                <a href="#">دوره‌های من</a>
+                                <a
+                                        href="#"
+                                        class="text-tertiary-400 hover:text-primary-600 transition-colors">ارائه
+                                    دهندگان</a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="text-center">
-                    <div class="font-bold text-tertiary-600 mb-2">راهنما</div>
-                    <ul class="space-y-1 text-tertiary-400">
-                        <li>
-                            <a
-                                    href="#"
-                                    class="text-tertiary-400 hover:text-primary-600 transition-colors">شرکت
-                                کنندگان</a>
-                        </li>
-                        <li>
-                            <a
-                                    href="#"
-                                    class="text-tertiary-400 hover:text-primary-600 transition-colors">ارائه
-                                دهندگان</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="text-center col-span-2 md:grid-cols-1">
-                    <div class="font-bold text-tertiary-600 mb-2">کسب درآمد</div>
-                    <ul class="space-y-1">
-                        <li>
-                            <a
-                                    href="#"
-                                    class="text-tertiary-400 hover:text-primary-600 transition-colors">تدریس در
-                                دوره‌ها</a>
-                        </li>
-                        <li>
-                            <a
-                                    href="#"
-                                    class="text-tertiary-400 hover:text-primary-600 transition-colors">همکاری در
-                                فروش</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="text-center col-span-2 md:grid-cols-1">
-                    <div class="font-bold text-tertiary-600 mb-2">
-                        راه‌های ارتباطی
                     </div>
-                    <ul class="space-y-1 text-tertiary-400">
-                        <li>
-                            <div>
-                                تماس: <a
-                                    href="#"
-                                    class="text-tertiary-400 hover:text-primary-600 transition-colors">
-                                340 303 91 - 021</a>
-                            </div>
-                            <div>
-                                <span>آدرس: </span>
-                                <span>
+                    <div class="text-center col-span-2 md:grid-cols-1">
+                        <div class="font-bold text-tertiary-600 mb-2">کسب درآمد</div>
+                        <ul class="space-y-1">
+                            <li>
+                                <a
+                                        href="#"
+                                        class="text-tertiary-400 hover:text-primary-600 transition-colors">تدریس در
+                                    دوره‌ها</a>
+                            </li>
+                            <li>
+                                <a
+                                        href="#"
+                                        class="text-tertiary-400 hover:text-primary-600 transition-colors">همکاری در
+                                    فروش</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center col-span-2 md:grid-cols-1">
+                        <div class="font-bold text-tertiary-600 mb-2">
+                            راه‌های ارتباطی
+                        </div>
+                        <ul class="space-y-1 text-tertiary-400">
+                            <li>
+                                <div>
+                                    تماس: <a
+                                        href="#"
+                                        class="text-tertiary-400 hover:text-primary-600 transition-colors">
+                                    340 303 91 - 021</a>
+                                </div>
+                                <div>
+                                    <span>آدرس: </span>
+                                    <span>
                     خیابان شهید بهشتی، خیابان سرافراز، کوچه خبرنگار(دوم)، پلاک 4
                   </span>
-                            </div>
-                        </li>
-                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="bg-[#564d44]">
+            <div
+                    class="container text-center py-2 text-xs lg:text-sm text-tertiary-200">
+                طراحی شده با ❤️ در ایران عزیز - کلیه‌ی حقوق نزد آکادمی آنلاین دوره ها
+                محفوظ است و هر گونه کپی‌برداری از مطالب، پیگرد قانونی دارد.
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <div
+            id="overlay"
+            class="bg-black/20 fixed top-0 right-0 left-0 bottom-0 z-30 hidden transition-all scale-0">
     </div>
-    <div class="bg-[#564d44]">
-        <div
-                class="container text-center py-2 text-xs lg:text-sm text-tertiary-200">
-            طراحی شده با ❤️ در ایران عزیز - کلیه‌ی حقوق نزد آکادمی آنلاین دوره ها
-            محفوظ است و هر گونه کپی‌برداری از مطالب، پیگرد قانونی دارد.
+    <div class="loading-container bg-black/40 fixed top-0 right-0 left-0 bottom-0 z-30 flex items-center justify-center hidden">
+        <div id="loading" class="z-30">
+            <div class="half"></div>
+            <div class="half"></div>
         </div>
     </div>
-</footer>
-<!-- Footer End -->
-<div
-        id="overlay"
-        class="bg-black/20 fixed top-0 right-0 left-0 bottom-0 z-30 hidden transition-all scale-0">
-</div>
-<div class="loading-container bg-black/40 fixed top-0 right-0 left-0 bottom-0 z-30 flex items-center justify-center hidden">
-    <div id="loading" class="z-30">
-        <div class="half"></div>
-        <div class="half"></div>
+    <div class="fixed bottom-4 left-4 z-20">
+        <button id="btn-scroll-top" class="block bg-primary-500 text-white p-1 rounded-full">
+            <svg class="w-12 h-12">
+                <use href="#scrollup-icon"></use>
+            </svg>
+        </button>
     </div>
-</div>
-<div class="fixed bottom-4 left-4 z-20">
-    <button id="btn-scroll-top" class="block bg-primary-500 text-white p-1 rounded-full">
-        <svg class="w-12 h-12">
-            <use href="#scrollup-icon"></use>
-        </svg>
-    </button>
-</div>
 </body>
 <script src="./assets/js/swiper-bundle.min.js"></script>
 <script src="./assets/js/sweetalert2@11.js"></script>

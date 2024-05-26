@@ -310,6 +310,7 @@
     <symbol id="check-circle-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"/></symbol>
     <symbol id="pos-tutorial-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M21,3H3A2,2 0 0,0 1,5V8H3V5H21V19H14V21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3M1,18V21H4A3,3 0 0,0 1,18M1,14V16A5,5 0 0,1 6,21H8A7,7 0 0,0 1,14M1,10V12A9,9 0 0,1 10,21H12C12,14.92 7.07,10 1,10M11,11.09V13.09L14.5,15L18,13.09V11.09L14.5,13L11,11.09M14.5,6L9,9L14.5,12L20,9L14.5,6Z" /></symbol>
     <symbol id="scrollup-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M17,14L12,9L7,14H17Z" /></symbol>
+    <symbol id="video-play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8,5.14V19.14L19,12.14L8,5.14Z"/></symbol>
   </svg>
   <!-- All Icon End -->
   <!-- Header Start -->
@@ -759,10 +760,19 @@
         <!-- curse intro -->
         <div class="mb-8 scroll-mt-30 md:scroll-mt-40" id="intro-course">
           <div
-                  class="rounded-2xl overflow-hidden shadow-md child:h-full child:w-full child:aspect-video child:object-cover">
-            <iframe src="https://player.arvancloud.ir/index.html?config=https://ez.arvanvod.ir/VLK8LB5xqb/82EQA0KnVJ/origin_config.json&amp;skin=shaka" style="border:0 #ffffff none;" name="1 - MT.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" __idm_id__="6635521">
-
-            </iframe>
+                  class="relative rounded-2xl overflow-hidden shadow-md">
+            <img src="./assets/images/site/video-poster.jpg"
+                 alt="وبسایت دوره‌ها" width="320" height="180">
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 inline-flex bg-[#0000004C] opacity-0 animate-play rounded-full"></span>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 inline-flex bg-[#0000004C] opacity-0 animate-play animation-delay-1000 rounded-full"></span>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 inline-flex bg-[#0000004C] opacity-0 animate-play animation-delay-2000 rounded-full"></span>
+            <button type="button"
+                    class="absolute course-item-button top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-500 w-14 h-14 inline-flex items-center justify-center rounded-full text-gray-100 hover:text-gray-300 transition-colors z-20"
+                    data-video-name="1 - MT.mp4" data-video-config="https://ez.arvanvod.ir/VLK8LB5xqb/82EQA0KnVJ/origin_config.json" data-status="on">
+              <svg class="w-12 h-12">
+                <use href="#video-play-icon"></use>
+              </svg>
+            </button>
           </div>
           <div class="md:hidden">
             <div

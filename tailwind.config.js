@@ -68,12 +68,18 @@ module.exports = {
         type: {
           '0%': { visible: 'visible', opacity: '1' },
           '100%': { visible: 'hidden', opacity: '0' },
+        },
+        play: {
+          '0%': {transform: 'translate(-50%, -50%) scale(0.2)', opacity: 0},
+          '50%': {opacity: 0.9},
+          '100%': {transform: 'translate(-50%, -50%) scale(0.9)', opacity: 0},
         }
       },
       animation: {
         off: 'off 1s ease-in-out infinite',
         scale: 'scale .5s ease-in-out alternate infinite',
         type: 'type .5s ease-in-out alternate infinite',
+        play: 'play 3s ease-in-out infinite',
       },
       fontFamily: {
         "YekanBakh" : "YekanBakh",
@@ -113,7 +119,8 @@ module.exports = {
       addVariant('child-third', '& > * > a');
     },
     require('tailwind-scrollbar-hide'),
-    require('@xpd/tailwind-3dtransforms')
+    require('@xpd/tailwind-3dtransforms'),
+    require("tailwindcss-animation-delay")
   ],
 }
 
