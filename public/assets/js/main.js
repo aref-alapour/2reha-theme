@@ -676,6 +676,8 @@ favoriteBtnAcc.forEach(element => {
 });
 
 // TopNavbar
+
+/*
 document.addEventListener("DOMContentLoaded", () => {
     function getValue(d, timePart) {
         var val = 0
@@ -708,3 +710,86 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     init()
 });
+*/
+// player for comments
+const playPauseComment = document.querySelectorAll('.play-pause-comment');
+let curr_track,
+    updateTimer,
+    totalDuration,
+    currentTime,
+    seekSlider,
+    buttonClick;
+
+function playActive(){
+    playPauseComment.forEach((element) => {
+        let playStatus = element.getAttribute('data-play');
+        if (playStatus == 'yes'){
+            curr_track.pause();
+            element.setAttribute('data-play', 'no');
+            element.innerHTML = '<svg class="w-8 h-8"><use href="#video-play-icon"></use></svg>';
+        }
+    })
+}
+playPauseComment.forEach((element) => {
+    element.addEventListener('click', function (){
+        buttonClick = this;
+        let playStatus = this.getAttribute('data-play');
+        let commentLink = this.getAttribute('data-comment-link');
+        let commentID = this.getAttribute('data-comment');
+        let totalDurationID = commentID+'-total-duration';
+        let currentTimeID = commentID+'-current-time';
+        let seekSliderID = commentID+'-seek-slider';
+        totalDuration = document.getElementById(totalDurationID);
+        currentTime = document.getElementById(currentTimeID);
+        seekSlider = document.getElementById(seekSliderID);
+        clearInterval(updateTimer);
+        if (playStatus == 'no'){
+            playActive();
+            curr_track = document.createElement('audio')
+            curr_track.src = commentLink;
+            curr_track.play();
+            updateTimer = setInterval(setUpdate, 1000);
+            buttonClick.innerHTML = '<svg class="w-8 h-8"><use href="#video-pause-icon"></use></svg>';
+            buttonClick.setAttribute('data-play', 'yes');
+        } else {
+            curr_track.pause();
+            buttonClick.setAttribute('data-play', 'no');
+            buttonClick.innerHTML = '<svg class="w-8 h-8"><use href="#video-play-icon"></use></svg>';
+        }
+        curr_track.addEventListener('ended', ()=>{
+            reset(totalDuration,currentTime,seekSlider);
+            curr_track.pause();
+        });
+    })
+})
+
+function reset(totalDuration,currentTime,seekSlider) {
+    currentTime.textContent = "0";
+    totalDuration.textContent = "00:00";
+    seekSlider.value = 0;
+}
+function seekTo(e) {
+    let seekto = curr_track.duration * (e.value / 100);
+    curr_track.currentTime = seekto;
+}
+
+function setUpdate() {
+    let seekPosition = 0;
+    if (!isNaN(curr_track.duration)) {
+        seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+        seekSlider.value = seekPosition;
+
+        let currentMinutes = Math.floor(curr_track.currentTime / 60);
+        let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+        let durationMinutes = Math.floor(curr_track.duration / 60);
+        let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+
+        if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+        if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
+        if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
+        if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+
+        currentTime.textContent = currentMinutes + ":" + currentSeconds;
+        totalDuration.textContent = durationMinutes + ":" + durationSeconds;
+    }
+}

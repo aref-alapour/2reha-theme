@@ -1241,3 +1241,46 @@ div#clock div {
   height: 45px;
 }
 }
+.seek-slider {
+  appearance: none;
+  height: 5px;
+  background: #CCDADA;
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+.seek-slider::-webkit-slider-thumb{
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #99B4B5;
+  border: 3px solid #003637;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.seek-slider:hover{
+  opacity: 1.0;
+}
+.seek-slider {
+  width: 100%;
+}
+.woocommerce-checkout #customer_details, .woocommerce-checkout #order_review_heading {
+  @apply hidden;
+}
+.woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment ul.wc_payment_methods li.wc_payment_method {
+  @apply bg-secondary-100/30 shadow p-2 my-4 rounded-lg shadow flex items-center gap-x-3;
+}
+.woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment ul.wc_payment_methods li.wc_payment_method label {
+  @apply flex items-center;
+}
+.woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment ul.wc_payment_methods li.wc_payment_method label img {
+  @apply w-14;
+}
+.woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-checkout-payment ul.wc_payment_methods li.wc_payment_method .payment_box {
+  @apply hidden;
+}
+.woocommerce-checkout .woocommerce-checkout-review-order .woocommerce-terms-and-conditions-wrapper {
+  @apply hidden;
+}
+.woocommerce-checkout .woocommerce-checkout-review-order button[type=submit]{
+  @apply w-fit mx-auto px-4 py-2 rounded-lg shadow block bg-green-light hover:bg-green-dark text-white font-medium transition-colors;
+}

@@ -311,6 +311,7 @@
     <symbol id="pos-tutorial-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M21,3H3A2,2 0 0,0 1,5V8H3V5H21V19H14V21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3M1,18V21H4A3,3 0 0,0 1,18M1,14V16A5,5 0 0,1 6,21H8A7,7 0 0,0 1,14M1,10V12A9,9 0 0,1 10,21H12C12,14.92 7.07,10 1,10M11,11.09V13.09L14.5,15L18,13.09V11.09L14.5,13L11,11.09M14.5,6L9,9L14.5,12L20,9L14.5,6Z" /></symbol>
     <symbol id="scrollup-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M17,14L12,9L7,14H17Z" /></symbol>
     <symbol id="video-play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8,5.14V19.14L19,12.14L8,5.14Z"/></symbol>
+    <symbol id="video-pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14,19H18V5H14M6,19H10V5H6V19Z" /></symbol>
   </svg>
   <!-- All Icon End -->
   <!-- Header Start -->
@@ -1127,7 +1128,165 @@
           </div>
         </div>
         <!-- comment and question-of-teacher -->
-        <div class="mt-10 bg-stone-50 scroll-mt-30 md:scroll-mt-40 rounded-xl shadow overflow-hidden" id="comment-course">
+        <div class="mt-6 scroll-mt-30 md:scroll-mt-40 bg-primary-100/20 p-4 rounded-xl shadow" id="comment-course">
+          <h2 class="text-lg text-primary-500 font-semibold mb-4">صدای کاربران:</h2>
+          <div class="grid col-span-1 xs:grid-cols-2 md:grid-cols-3 lg:col-span-4 xl:grid-cols-5 gap-6">
+            <div class="border border-dashed py-4 px-2 rounded-lg shadow">
+             <div class="w-28 h-28 mx-auto relative">
+               <img src="./assets/images/site/user-profile.jpg" alt="" width="90" height="90" class="absolute top-0 left-0 right-0 bottom-0 m-auto w-24 h-24 rounded-full object-cover">
+               <button class="play-pause-comment absolute top-0 left-0 right-0 bottom-0 m-auto w-10 h-10 bg-primary-500/50 flex justify-center items-center rounded-full text-gray-100 hover:bg-primary-500 transition-colors" data-comment-link="https://shikseda.com/wp-content/uploads/2024/05/1.mp3" data-comment="comment-1" data-play="no">
+                 <svg class="w-8 h-8">
+                   <use href="#video-play-icon"></use>
+                 </svg>
+               </button>
+             </div>
+               <div class="text-center my-2 font-medium">پوریا عنایت</div>
+              <div class="flex justify-center items-center gap-x-2">
+                <div id="comment-1-total-duration" class="text-secondary-600 text-xs mt-1">00:00</div>
+                <input id="comment-1-seek-slider" type="range" min="1" max="100" value="0" class="seek-slider"
+                       onchange="return seekTo(this)" style="direction: ltr">
+                <div id="comment-1-current-time" class="text-secondary-600 text-xs mt-1">00:00</div>
+              </div>
+            </div>
+            <div class="border border-dashed py-4 px-2 rounded-lg shadow">
+              <div class="w-28 h-28 mx-auto relative">
+                <img src="./assets/images/site/user-profile.jpg" alt="" width="90" height="90" class="absolute top-0 left-0 right-0 bottom-0 m-auto w-24 h-24 rounded-full object-cover">
+                <button class="play-pause-comment absolute top-0 left-0 right-0 bottom-0 m-auto w-10 h-10 bg-primary-500/50 flex justify-center items-center rounded-full text-gray-100 hover:bg-primary-500 transition-colors" data-comment-link="https://shikseda.com/wp-content/uploads/2024/05/1.mp3" data-comment="comment-2" data-play="no">
+                  <svg class="w-8 h-8">
+                    <use href="#video-play-icon"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="text-center my-2 font-medium">پوریا عنایت</div>
+              <div class="flex justify-center items-center gap-x-2">
+                <div id="comment-2-total-duration" class="text-secondary-600 text-xs mt-1">00:00</div>
+                <input id="comment-2-seek-slider" type="range" min="1" max="100" value="0" class="seek-slider"
+                       onchange="return seekTo(this)" style="direction: ltr">
+                <div id="comment-2-current-time" class="text-secondary-600 text-xs mt-1">00:00</div>
+              </div>
+            </div>
+            <div class="border border-dashed py-4 px-2 rounded-lg shadow">
+              <div class="w-28 h-28 mx-auto relative">
+                <img src="./assets/images/site/user-profile.jpg" alt="" width="90" height="90" class="absolute top-0 left-0 right-0 bottom-0 m-auto w-24 h-24 rounded-full object-cover">
+                <button class="play-pause-comment absolute top-0 left-0 right-0 bottom-0 m-auto w-10 h-10 bg-primary-500/50 flex justify-center items-center rounded-full text-gray-100 hover:bg-primary-500 transition-colors" data-comment-link="https://shikseda.com/wp-content/uploads/2024/05/1.mp3" data-comment="comment-3" data-play="no">
+                  <svg class="w-8 h-8">
+                    <use href="#video-play-icon"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="text-center my-2 font-medium">پوریا عنایت</div>
+              <div class="flex justify-center items-center gap-x-2">
+                <div id="comment-3-total-duration" class="text-secondary-600 text-xs mt-1">00:00</div>
+                <input id="comment-3-seek-slider" type="range" min="1" max="100" value="0" class="seek-slider"
+                       onchange="return seekTo(this)" style="direction: ltr">
+                <div id="comment-3-current-time" class="text-secondary-600 text-xs mt-1">00:00</div>
+              </div>
+            </div>
+            <div class="border border-dashed py-4 px-2 rounded-lg shadow">
+              <div class="w-28 h-28 mx-auto relative">
+                <img src="./assets/images/site/user-profile.jpg" alt="" width="90" height="90" class="absolute top-0 left-0 right-0 bottom-0 m-auto w-24 h-24 rounded-full object-cover">
+                <button class="play-pause-comment absolute top-0 left-0 right-0 bottom-0 m-auto w-10 h-10 bg-primary-500/50 flex justify-center items-center rounded-full text-gray-100 hover:bg-primary-500 transition-colors" data-comment-link="https://shikseda.com/wp-content/uploads/2024/05/1.mp3" data-comment="comment-4" data-play="no">
+                  <svg class="w-8 h-8">
+                    <use href="#video-play-icon"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="text-center my-2 font-medium">پوریا عنایت</div>
+              <div class="flex justify-center items-center gap-x-2">
+                <div id="comment-4-total-duration" class="text-secondary-600 text-xs mt-1">00:00</div>
+                <input id="comment-4-seek-slider" type="range" min="1" max="100" value="0" class="seek-slider"
+                       onchange="return seekTo(this)" style="direction: ltr">
+                <div id="comment-4-current-time" class="text-secondary-600 text-xs mt-1">00:00</div>
+              </div>
+            </div>
+            <div class="border border-dashed py-4 px-2 rounded-lg shadow">
+              <div class="w-28 h-28 mx-auto relative">
+                <img src="./assets/images/site/user-profile.jpg" alt="" width="90" height="90" class="absolute top-0 left-0 right-0 bottom-0 m-auto w-24 h-24 rounded-full object-cover">
+                <button class="play-pause-comment absolute top-0 left-0 right-0 bottom-0 m-auto w-10 h-10 bg-primary-500/50 flex justify-center items-center rounded-full text-gray-100 hover:bg-primary-500 transition-colors" data-comment-link="https://shikseda.com/wp-content/uploads/2024/05/1.mp3" data-comment="comment-5" data-play="no">
+                  <svg class="w-8 h-8">
+                    <use href="#video-play-icon"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="text-center my-2 font-medium">پوریا عنایت</div>
+              <div class="flex justify-center items-center gap-x-2">
+                <div id="comment-5-total-duration" class="text-secondary-600 text-xs mt-1">00:00</div>
+                <input id="comment-5-seek-slider" type="range" min="1" max="100" value="0" class="seek-slider"
+                       onchange="return seekTo(this)" style="direction: ltr">
+                <div id="comment-5-current-time" class="text-secondary-600 text-xs mt-1">00:00</div>
+              </div>
+            </div>
+            <div class="border border-dashed py-4 px-2 rounded-lg shadow">
+              <div class="w-28 h-28 mx-auto relative">
+                <img src="./assets/images/site/user-profile.jpg" alt="" width="90" height="90" class="absolute top-0 left-0 right-0 bottom-0 m-auto w-24 h-24 rounded-full object-cover">
+                <button class="play-pause-comment absolute top-0 left-0 right-0 bottom-0 m-auto w-10 h-10 bg-primary-500/50 flex justify-center items-center rounded-full text-gray-100 hover:bg-primary-500 transition-colors" data-comment-link="https://shikseda.com/wp-content/uploads/2024/05/1.mp3" data-comment="comment-6" data-play="no">
+                  <svg class="w-8 h-8">
+                    <use href="#video-play-icon"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="text-center my-2 font-medium">پوریا عنایت</div>
+              <div class="flex justify-center items-center gap-x-2">
+                <div id="comment-6-total-duration" class="text-secondary-600 text-xs mt-1">00:00</div>
+                <input id="comment-6-seek-slider" type="range" min="1" max="100" value="0" class="seek-slider"
+                       onchange="return seekTo(this)" style="direction: ltr">
+                <div id="comment-6-current-time" class="text-secondary-600 text-xs mt-1">00:00</div>
+              </div>
+            </div>
+            <div class="border border-dashed py-4 px-2 rounded-lg shadow">
+              <div class="w-28 h-28 mx-auto relative">
+                <img src="./assets/images/site/user-profile.jpg" alt="" width="90" height="90" class="absolute top-0 left-0 right-0 bottom-0 m-auto w-24 h-24 rounded-full object-cover">
+                <button class="play-pause-comment absolute top-0 left-0 right-0 bottom-0 m-auto w-10 h-10 bg-primary-500/50 flex justify-center items-center rounded-full text-gray-100 hover:bg-primary-500 transition-colors" data-comment-link="https://shikseda.com/wp-content/uploads/2024/05/1.mp3" data-comment="comment-7" data-play="no">
+                  <svg class="w-8 h-8">
+                    <use href="#video-play-icon"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="text-center my-2 font-medium">پوریا عنایت</div>
+              <div class="flex justify-center items-center gap-x-2">
+                <div id="comment-7-total-duration" class="text-secondary-600 text-xs mt-1">00:00</div>
+                <input id="comment-7-seek-slider" type="range" min="1" max="100" value="0" class="seek-slider"
+                       onchange="return seekTo(this)" style="direction: ltr">
+                <div id="comment-7-current-time" class="text-secondary-600 text-xs mt-1">00:00</div>
+              </div>
+            </div>
+            <div class="border border-dashed py-4 px-2 rounded-lg shadow">
+              <div class="w-28 h-28 mx-auto relative">
+                <img src="./assets/images/site/user-profile.jpg" alt="" width="90" height="90" class="absolute top-0 left-0 right-0 bottom-0 m-auto w-24 h-24 rounded-full object-cover">
+                <button class="play-pause-comment absolute top-0 left-0 right-0 bottom-0 m-auto w-10 h-10 bg-primary-500/50 flex justify-center items-center rounded-full text-gray-100 hover:bg-primary-500 transition-colors" data-comment-link="https://shikseda.com/wp-content/uploads/2024/05/1.mp3" data-comment="comment-8" data-play="no">
+                  <svg class="w-8 h-8">
+                    <use href="#video-play-icon"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="text-center my-2 font-medium">پوریا عنایت</div>
+              <div class="flex justify-center items-center gap-x-2">
+                <div id="comment-8-total-duration" class="text-secondary-600 text-xs mt-1">00:00</div>
+                <input id="comment-8-seek-slider" type="range" min="1" max="100" value="0" class="seek-slider"
+                       onchange="return seekTo(this)" style="direction: ltr">
+                <div id="comment-8-current-time" class="text-secondary-600 text-xs mt-1">00:00</div>
+              </div>
+            </div>
+            <div class="border border-dashed py-4 px-2 rounded-lg shadow">
+              <div class="w-28 h-28 mx-auto relative">
+                <img src="./assets/images/site/user-profile.jpg" alt="" width="90" height="90" class="absolute top-0 left-0 right-0 bottom-0 m-auto w-24 h-24 rounded-full object-cover">
+                <button class="play-pause-comment absolute top-0 left-0 right-0 bottom-0 m-auto w-10 h-10 bg-primary-500/50 flex justify-center items-center rounded-full text-gray-100 hover:bg-primary-500 transition-colors" data-comment-link="https://shikseda.com/wp-content/uploads/2024/05/1.mp3" data-comment="comment-9" data-play="no">
+                  <svg class="w-8 h-8">
+                    <use href="#video-play-icon"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="text-center my-2 font-medium">پوریا عنایت</div>
+              <div class="flex justify-center items-center gap-x-2">
+                <div id="comment-9-total-duration" class="text-secondary-600 text-xs mt-1">00:00</div>
+                <input id="comment-9-seek-slider" type="range" min="1" max="100" value="0" class="seek-slider"
+                       onchange="return seekTo(this)" style="direction: ltr">
+                <div id="comment-9-current-time" class="text-secondary-600 text-xs mt-1">00:00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 bg-stone-50 scroll-mt-30 md:scroll-mt-40 rounded-xl shadow overflow-hidden">
           <div
                class="text-tertiary-600">
             <div
