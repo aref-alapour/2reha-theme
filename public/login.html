@@ -281,6 +281,8 @@
     </symbol>
     <symbol id="restore-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M2 12C2 16.97 6.03 21 11 21C13.39 21 15.68 20.06 17.4 18.4L15.9 16.9C14.63 18.25 12.86 19 11 19C4.76 19 1.64 11.46 6.05 7.05C10.46 2.64 18 5.77 18 12H15L19 16H19.1L23 12H20C20 7.03 15.97 3 11 3C6.03 3 2 7.03 2 12Z" /></symbol>
     <symbol id="email-login-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13 19C13 18.66 13.04 18.33 13.09 18H4V8L12 13L20 8V13.09C20.72 13.21 21.39 13.46 22 13.81V6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19M20 6L12 11L4 6H20M18 16V18H22V20H18V22L15 19L18 16Z" /></symbol>
+    <symbol id="static-password-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14 15C14 16.11 13.11 17 12 17C10.89 17 10 16.1 10 15C10 13.89 10.89 13 12 13C13.11 13 14 13.9 14 15M13.09 20C13.21 20.72 13.46 21.39 13.81 22H6C4.89 22 4 21.1 4 20V10C4 8.89 4.89 8 6 8H7V6C7 3.24 9.24 1 12 1S17 3.24 17 6V8H18C19.11 8 20 8.9 20 10V13.09C19.67 13.04 19.34 13 19 13C18.66 13 18.33 13.04 18 13.09V10H6V20H13.09M9 8H15V6C15 4.34 13.66 3 12 3S9 4.34 9 6V8M21.34 15.84L17.75 19.43L16.16 17.84L15 19L17.75 22L22.5 17.25L21.34 15.84Z" /></symbol>
+    <symbol id="token-password-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M457.4 52.83l-403.42 0 0 332.82 30.26 -30.26 373.16 0 0 -302.56zm50.42 0l0 302.56c0.01,27.84 -22.58,50.42 -50.42,50.42l-352.99 0.01 -100.85 100.85 0 -453.84c0,-27.84 22.58,-50.43 50.43,-50.43l403.41 0.01c27.84,-0.01 50.43,22.58 50.43,50.42l-0.01 0z"/><path d="M276.21 284.53c1.22,7.32 3.76,14.14 7.32,20.35l-79.47 0c-11.3,0 -20.36,-9.16 -20.36,-20.35l0 -101.77c0,-11.29 9.06,-20.34 20.36,-20.34l10.17 0 0 -20.36c0,-28.09 22.8,-50.88 50.88,-50.88 28.09,0 50.88,22.79 50.88,50.88l0 20.36 10.18 0c11.3,0 20.35,9.15 20.35,20.34l0 31.45c-3.35,-0.51 -6.71,-0.92 -10.17,-0.92 -3.46,0 -6.82,0.41 -10.18,0.92l0 -31.45 -122.11 0 0 101.77 72.15 0 0 0zm-41.63 -122.11l61.07 0 0 -20.36c0,-16.89 -13.64,-30.53 -30.54,-30.53 -16.89,0 -30.53,13.64 -30.53,30.53l0 20.36 0 0zm53.82 38.05l-36.53 36.53 -16.18 -16.18 -11.81 11.8 27.99 30.53 48.33 -48.33 -11.8 -14.35z"/></symbol>
 </svg>
 <!-- All Icon End -->
 <!-- Header Start -->
@@ -960,6 +962,14 @@
             <button onclick="" class="flex items-center gap-x-1 text-sm text-secondary-600 font-medium">
                 <svg class="w-4 h-4"><use href="#email-login-icon"></use></svg>
                 ورود با ایمیل
+            </button>
+            <button onclick="" class="flex items-center gap-x-1 text-sm text-secondary-600 font-medium">
+                <svg class="w-4 h-4"><use href="#static-password-icon"></use></svg>
+                ورود با رمز ثابت
+            </button>
+            <button onclick="" class="flex items-center gap-x-1 text-sm text-secondary-600 font-medium">
+                <svg class="w-4 h-4"><use href="#token-password-icon"></use></svg>
+                ورود با رمز یکبار مصرف
             </button>
         </div>
         <button type="button" id="btn-send-sms-otp-repeat"
